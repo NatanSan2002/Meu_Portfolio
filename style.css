@@ -29,12 +29,24 @@ a{
 
 
 header{
-display:flex;
-justify-content: space-between;
-background:#090C9B;
-color:white;
-padding:13px 25%;
+    display: flex;
+    justify-content: space-around;
+    background:var(--blueDark);
+    color: white;
+    padding:13px 0px; 
+    width: 100%;
+
 }
+
+.roll{
+    position:fixed; left:0px; top:0px;
+    padding:2px 0px;
+    background:#090C9B50;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
+}
+
+
 
 header li {
 display:inline-block;
@@ -48,12 +60,16 @@ header  a {
 color:white;
 }
 
-header img#icon{
+header .icon{
 width:90px;
 }
 
 header .img_container{
     margin-right:15px;
+}
+
+.header_icon_small{
+    width:70px;
 }
 
 
@@ -77,20 +93,43 @@ transition-duration: 0.3s;
 
 
 
-@media(max-width:1061px){
-    header{
-        padding: 13px 10%;
-    }
+main{
+    margin: 189px 2% 30px 2%;
 }
+
+
+section{
+    padding: 40px 6%;
+}
+
+.welcome{
+padding:0px 0px;
+padding-bottom: 14%;
+text-align: center;
+
+}
+
+.welcome h1{
+font-size:8rem;
+}
+
+.welcome h2{
+    font-size: 3.2rem;
+    background: black;
+    color: white;
+    display: inline-block;
+    }
+
 
 @media(max-width:651px){
     header nav a{
         padding: 13px 15px;
         font-size: 0.8rem;
     }
-    header {
-        padding: 13px 2% 13px 4%;
-    }
+}
+
+@media(max-width:512px){
+/* Menu Barrinha*/
 }
 
 
