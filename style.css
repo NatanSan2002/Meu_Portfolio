@@ -1,9 +1,17 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Karla:wght@800&display=swap');
+
+
+
 :root{
     --blueLight:#758ECD;
     --blueDark:#090C9B;
     --greenForest:#386150;
+    --fontTitle:'Karla', Arial, sans-serif;
+    --fontSubTitle:'Heebo', Arial, sans-serif;
     }
 
 
@@ -94,7 +102,8 @@ transition-duration: 0.3s;
 
 
 main{
-    margin: 189px 2% 30px 2%;
+    margin: 189px 0px 30px 0px;
+    padding:0px 2% 0px 2%;
 }
 
 
@@ -111,15 +120,186 @@ text-align: center;
 
 .welcome h1{
 font-size:8rem;
+font-family: var(--fontTitle);
 }
 
 .welcome h2{
     font-size: 3.2rem;
     background: black;
     color: white;
-    display: inline-block;
+    display: block;
+    width: 60%;
+    font-family: var(--fontSubTitle);
+    font-weight: 400;
+    margin: 80px auto 0px auto;
+    padding: 0px 14px 0px 14px;
     }
 
+.welcome .small_view{
+display:none;
+}
+
+    @media(max-width:1540px){
+        .welcome h1 {
+            font-size: 7.5rem;
+            
+        }
+
+        
+        }
+        @media(max-width:1444px){
+            .welcome h1 {
+                font-size: 7rem;
+            
+                
+            }
+
+            .welcome h2 {
+                font-size: 2.1rem;
+                
+            }
+            
+            }
+
+            @media(max-width:1348px){
+                .welcome h1 {
+                    font-size: 6.5rem;
+                    
+                    
+                }
+                .welcome h2 {
+                    font-size: 2.5rem;
+                    
+                }
+                
+                }
+
+                @media(max-width:1252px){
+                    .welcome h1 {
+                        font-size: 6.0rem;
+                        
+                    }
+                    
+                    header nav a{
+                
+                        font-size: 0.9rem;
+                        
+                        
+                    }
+                    }
+
+                    @media(max-width:1252px){
+                        .welcome h1 {
+                            font-size: 6.0rem;
+                            
+                        }
+                        
+                        
+                        
+                        }
+
+                        @media(max-width:1156px){
+                            .welcome h1 {
+                                font-size: 5.5rem;
+                                
+                            }
+                            .welcome h2 {
+                                font-size: 1.9rem;
+                    
+                                
+                            }
+                            
+                            }
+
+                            @media(max-width:1061px){
+                                .welcome h1 {
+                                    font-size: 5.0rem;
+                                    
+                                }
+                                .welcome h2{text-align: left;
+                                margin: 80px 0px 0px 5%;
+                                font-size: 1.6rem;
+                                font-style: italic;}
+                                
+                                
+                                }
+
+                                @media(max-width:697px){
+                                    .welcome h2{background: transparent;
+                                          color: black;
+                                          font-weight: 600;
+                                          width: 100%;
+                                          margin: 80px 0px 0px 0px;
+                                          padding: 0px;
+                                          
+                                    }
+                                }
+
+                                    @media(max-width:640px){
+
+                                        main {
+                                            margin: 26px 0px 30px 0px
+                                        }
+                                    
+                                    .welcome div {
+                                        display:none;
+                                    }
+
+                                    .welcome .small_view{
+                                        display:block;
+                                    }
+                                    .welcome .small_view h1#i1,h1#i2,h1#i3{
+                                    font-size: 6rem;
+                                    margin-bottom:30px;
+                                    }
+
+                                    .welcome .small_view h1#i2{
+                                        background:black;
+                                        color:white;
+                                        
+                                        }
+
+                                        .welcome .small_view h1#i1{
+                                            text-align: left;
+                                            
+                                            }
+                                            .welcome .small_view h1#i3{
+                                                text-align: right;
+                                                
+                                                }
+
+                                            .welcome h2{
+                                            margin-top: 40px;
+                                            }
+                                            }
+                                                @media(max-width:512px){  
+                                                .welcome .small_view h1#i1,h1#i2,h1#i3{
+                                                    font-size: 5rem;
+                                                    margin-bottom:30px;
+                                                    }
+
+
+                                        
+                                        }
+
+                                        @media(max-width:354px){  
+                                            .welcome .small_view h1#i1,h1#i2,h1#i3{
+                                                font-size: 4rem;
+                                                margin-bottom:30px;
+                                                
+                                                }
+
+                                        
+                                    
+                                    }
+
+                                    
+                                
+
+                            
+
+                        
+        
 
 @media(max-width:651px){
     header nav a{
