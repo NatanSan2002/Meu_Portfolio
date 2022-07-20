@@ -39,7 +39,7 @@ a{
 header{
     display: flex;
     justify-content: space-around;
-    background:var(--blueDark);
+    background:black;
     color: white;
     padding:13px 0px; 
     width: 100%;
@@ -49,7 +49,7 @@ header{
 .roll{
     position:fixed; left:0px; top:0px;
     padding:2px 0px;
-    background:#090C9B50;
+    background:#00000095;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(4px);
 }
@@ -84,7 +84,8 @@ header .img_container{
 
 header nav a{
     padding: 8px 15px;
-    background: black;
+    background: white;
+    color:var(--greenForest);
     border-radius: 20px;
     font-size: 1.0rem;
     font-weight: bold;
@@ -93,8 +94,8 @@ header nav a{
 }
 
 header nav a:hover{
-background:white;
-color:black;
+background:var(--greenForest);
+color:white;
 transition-duration: 0.3s;
 }
 
@@ -115,17 +116,18 @@ section{
 padding:0px 0px;
 padding-bottom: 14%;
 text-align: center;
+font-size: 16px;
 
 }
 
 .welcome h1{
-font-size:8rem;
+font-size:8em;
 font-family: var(--fontTitle);
 
 }
 
 .welcome h2{
-    font-size: 3.2rem;
+    font-size: 3.2em;
     background: black;
     color: white;
     display: block;
@@ -134,14 +136,25 @@ font-family: var(--fontTitle);
     font-weight: 400;
     margin: 80px auto 0px auto;
     padding: 0px 14px 0px 14px;
-    animation: slide_div 1.7s steps(300)  normal;
+    animation: slide_div 1.7s steps(300) normal, 
+    alternate_color 1.5s alternate infinite ease-in-out 3.5s;
     white-space: nowrap;
     overflow: hidden;
+    
 
     }
 
 .welcome h2>p{
     animation: appears_words 1.7s
+}
+
+@keyframes alternate_color{
+to{
+background: white;
+color:black;
+}
+
+
 }
 
 @keyframes slide_div{
@@ -193,194 +206,196 @@ to{
 display:none;
 }
 
-    @media(max-width:1540px){
+
+
+
+
+
+
+
+
+
+
+ /*Max Widts*/
+
+ @media(max-width:1540px){
         .welcome h1 {
-            font-size: 7.5rem;
+        font-size: 7.5em;
             
+        }      
         }
-
-        
-        }
-        @media(max-width:1444px){
-            .welcome h1 {
-                font-size: 7rem;
-            
-                
+@media(max-width:1444px){
+       .welcome h1 {
+       font-size: 7em;             
+            }
+        .welcome h2 {
+        font-size: 2.1em;           
+            }    
             }
 
-            .welcome h2 {
-                font-size: 2.1rem;
-                
-            }
-            
-            }
-
-            @media(max-width:1348px){
-                .welcome h1 {
-                    font-size: 6.5rem;
-                    
-                    
-                }
-                
-                
+@media(max-width:1348px){
+        .welcome h1 {
+        font-size: 6.5em;               
+                }                  
                 }
 
-                @media(max-width:1252px){
-                    .welcome h1 {
-                        font-size: 6.0rem;
-                        
-                    }
-                    
-                    header nav a{
-                
-                        font-size: 0.9rem;
-                        
-                        
-                    }
+@media(max-width:1252px){
+         .welcome h1 {
+         font-size: 6.0em;          
+                }                   
+    header nav a{
+        font-size: 0.9em;                             
+                }
                     }
 
-                    @media(max-width:1252px){
-                        .welcome h1 {
-                            font-size: 6.0rem;
-                            
-                        }
-                        
-                        
-                        
+@media(max-width:1252px){
+        .welcome h1 {
+        font-size: 6.0em;                     
+            }                                      
                         }
 
-                        @media(max-width:1156px){
-                            .welcome h1 {
-                                font-size: 5.5rem;
-                                
-                            }
-                            .welcome h2 {
-                                font-size: 1.9rem;
-                    
-                                
-                            }
-                            
-                            }
+@media(max-width:1156px){
+         .welcome h1 {
+         font-size: 5.5em;                 
+                }
+        .welcome h2 {
+        font-size: 1.9em;                                                  
+                }                           
+                        }
 
-                            @media(max-width:1061px){
-                                .welcome h1 {
-                                    font-size: 5.0rem;
-                                    
-                                }
-                                .welcome h2{text-align: left;
-                                margin: 80px 0px 0px 5%;
-                                font-size: 1.6rem;
-                                font-style: italic;}
-                                
-                                
-                                }
+@media(max-width:1061px){
+        .welcome h1 {
+        font-size: 5.0em;                                  
+                }
+.welcome h2{text-align: left;
+        margin: 80px 0px 0px 5%;
+        font-size: 1.6em;
+        font-style: italic;}                                                             
+            }
 
-                                @media(max-width:697px){
-                                    .welcome h2{background: transparent;
-                                          color: black;
-                                          font-weight: 600;
-                                          width: 100%;
-                                          margin: 80px 0px 0px 0px;
-                                          padding: 0px;
-                                          animation: slide_div 0.7s steps(300) normal;
+@media(max-width:697px){
+        .welcome h2{background: transparent;
+        color: black;
+        font-weight: 600;
+        width: 100%;
+        margin: 80px 0px 0px 0px;
+        padding: 0px;
+        animation: slide_div 0.7s steps(300) normal;
                                           
-                                    }
-                                    @keyframes slide_div{
-                                        from{
-                                            width:0;
-                                            
-                                        }
-                                        to{
-                                            width:70%;
-                                            
-                                        }
-                                    }
+                    }
+@keyframes slide_div{
+        from{
+            width:0;                                           
+            }
+        to{
+            width:70%;                                           
+          }
+            }
+}
+@media(max-width:651px){
+        header nav a{
+        padding: 13px 15px;
+        font-size: 0.8em;
+        }
+         }
 
-                                }
-                                @media(max-width:651px){
-                                    header nav a{
-                                        padding: 13px 15px;
-                                        font-size: 0.8rem;
-                                    }
-                                }
-
-                                    @media(max-width:640px){
-
-                                        main {
-                                            margin: 26px 0px 30px 0px
-                                        }
+@media(max-width:640px){
+    main {
+        margin: 26px 0px 30px 0px
+            }
                                     
-                                    .welcome div {
-                                        display:none;
-                                    }
+.welcome div {
+       display:none;
+                    }
 
-                                    .welcome .small_view{
-                                        display:block;
-                                    }
-                                    .welcome .small_view h1#i1,h1#i2,h1#i3{
-                                    font-size: 6rem;
-                                    margin-bottom:30px;
-                                    }
+.welcome .small_view{
+    display:block;
+            }
+.welcome .small_view h1#i1,h1#i2,h1#i3{
+           font-size: 6em;
+           margin-bottom:30px;
+                            }
 
-                                    .welcome .small_view h1#i2{
-                                        background:black;
-                                        color:white;
+.welcome .small_view h1#i2{
+            background: black;
+            color:white;
+            animation: white_to_black 2s;
                                         
-                                        }
+                        }
+@keyframes slide_div{
+        from{
+            width:0;                                               
+                    }
+        to{
+            width:100%;                                              
+                    }
+    }
+@keyframes white_to_black{
+        from {
+              color:black;
+            }
+            to{
+            color:white;
+             }
+               }
 
-                                        .welcome .small_view h1#i1{
-                                           
-                                            text-align: left;
-                                        }
+.welcome .small_view h1#i1{
+            text-align: left;
+                        }
                                          
-                                            .welcome .small_view h1#i3{
-                                                text-align: right;
-                                                
-                                                }
+.welcome .small_view h1#i3{
+            text-align: right;                                               
+                            }
 
-                                                .welcome .small_view h1#i1,h1#i3{
-                                                    animation: push 1.0s steps(300)  normal;
-                                                    white-space: nowrap;
-                                                     overflow: hidden;
-                                                 }
-                                                    @keyframes push{
-                                                    from{
-                                                    width:0%;
-                                                    
-                                                    }
-                                                    to{
-                                                        width:100%;
-                                                        
-                                                    }
-                                                   
-                                                    }
+.welcome .small_view h1#i1,h1#i3{
+            animation: push 1.0s steps(300)  normal;
+            white-space: nowrap;
+            overflow: hidden;
+                                }
+@keyframes push{
+            from{
+                  width:0%;
+                }
+             to{
+                 width:100%;
+                }
+                    }
                                                
+.welcome h2{
+            margin-top: 60px;
+            animation: slide_div 1.8s steps(300)  normal;
+            }
+.welcome h2>p{
+            animation: appears_words 2.7s;
+                    }
+                    }
+                                            
+@media(max-width:512px){  
+            .welcome .small_view h1#i1,h1#i2,h1#i3{
+            font-size: 5em;
+            margin-bottom:30px;                                                   
+                }
+                                                                                                  
+                    /* Menu Barrinha*/
+                        }
 
-                                            .welcome h2{
-                                            margin-top: 40px;
-                                            }
-                                            }
-                                                @media(max-width:512px){  
-                                                .welcome .small_view h1#i1,h1#i2,h1#i3{
-                                                    font-size: 5rem;
-                                                    margin-bottom:30px;
-                                                    }
-                                        
-                                        
-                                                    /* Menu Barrinha*/
+@media(max-width:426px){
+           .welcome h2>p {
+            font-size: 22px;
+                }
+                }
 
-                                        
-                                        }
-
-                                        @media(max-width:354px){  
-                                            .welcome .small_view h1#i1,h1#i2,h1#i3{
-                                                font-size: 4rem;
-                                                margin-bottom:30px;
-                                                
-                                                }
-
-                                        
-                                    
+@media(max-width:368px){
+           .welcome h2>p {
+           font-size: 19px;
+                    }
+                    }
+                                                                         
+@media(max-width:354px){  
+        .welcome .small_view h1#i1,h1#i2,h1#i3{
+        font-size: 4em;
+         margin-bottom:30px;
+                                }
                                     }
 
                                     
