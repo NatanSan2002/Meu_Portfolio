@@ -28,6 +28,7 @@ body{
 font-family: Arial, Helvetica, sans-serif;
 min-height:100vh;
 background: white;
+
 }
 
 a{
@@ -58,6 +59,7 @@ header{
 
 header li {
 display:inline-block;
+list-style: none;
 }
 
 header nav{
@@ -99,7 +101,22 @@ color:white;
 transition-duration: 0.3s;
 }
 
+.mobile_menu{
+display: none;
+cursor:pointer;
+position: absolute;
+top:48px;
+right:61px;
+}
 
+
+
+.mobile_menu div {
+    width:32px;
+    height:2px;
+    background:white;
+    margin:8px;
+}
 
 
 main{
@@ -273,6 +290,51 @@ display:none;
         font-style: italic;}                                                             
             }
 
+
+@media(max-width:950px){
+
+
+    header{
+    background:#00000095;
+    height: 100vh;
+    flex-direction: column;
+    position: fixed; top:0px; left:0px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
+}
+    
+
+    header .img_container{
+        margin: 1% 0px 0px 10%;
+    }
+
+    header .icon{
+    width:70px;
+    }
+
+    header ul {
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: space-around;
+height:70vh;
+
+
+        }
+
+
+header li {
+    display:flex;
+   
+    }
+
+    .mobile_menu{
+        display: block;
+    }
+
+}
+
+
 @media(max-width:697px){
         .welcome h2{background: transparent;
         color: black;
@@ -292,12 +354,6 @@ display:none;
           }
             }
 }
-@media(max-width:651px){
-        header nav a{
-        padding: 13px 15px;
-        font-size: 0.8em;
-        }
-         }
 
 @media(max-width:640px){
     main {
@@ -376,7 +432,7 @@ display:none;
             margin-bottom:30px;                                                   
                 }
                                                                                                   
-                    /* Menu Barrinha*/
+                    
                         }
 
 @media(max-width:426px){
