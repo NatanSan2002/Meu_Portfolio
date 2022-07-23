@@ -3,6 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&family=Karla:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 
@@ -12,6 +13,7 @@
     --greenForest:#386150;
     --fontTitle:'Karla', Arial, sans-serif;
     --fontSubTitle:'Heebo', Arial, sans-serif;
+    --fontMenu:'Vazirmatn', Arial, sans-serif;
     }
 
 
@@ -44,6 +46,7 @@ header{
     color: white;
     padding:13px 0px; 
     width: 100%;
+    z-index: 1;
 
 }
 
@@ -53,6 +56,7 @@ header{
     background:#00000095;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(4px);
+    
 }
 
 
@@ -66,9 +70,7 @@ header nav{
 margin:auto 0;
 }
 
-header  a {
-color:white;
-}
+
 
 header .icon{
 width:90px;
@@ -85,13 +87,14 @@ header .img_container{
 
 
 header nav a{
-    padding: 8px 15px;
+    padding: 4px 15px;
     background: white;
     color:var(--greenForest);
     border-radius: 20px;
     font-size: 1.0rem;
-    font-weight: bold;
-    margin: 0px 0.3vw
+    font-weight: 500;
+    margin: 0px 0.3vw;
+    font-family: var(--fontSubTitle);
     
 }
 
@@ -121,6 +124,18 @@ border-radius: 10%;
     margin:7px 6px ;
 }
 
+.close_menu{
+padding-bottom: 13px;
+}
+
+
+.close_menu div#l1 {
+    transform: rotate(48deg) translate(8px, 6px);
+}
+
+.close_menu div#l2 {
+    transform: rotate(-49deg) translate(1px, 0px);
+}
 
 main{
     margin: 189px 0px 30px 0px;
@@ -310,6 +325,7 @@ display:none;
     position: fixed; top:0px; left:0px;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(4px);
+
 }
 
 header nav a{
@@ -321,6 +337,8 @@ header nav a{
     padding: 0px;
     border-radius: 30px;
     font-size: 5vh;
+    font-family: var(--fontSubTitle);
+    font-weight: 300;
 }
 
 header nav a:hover{

@@ -24,11 +24,22 @@ icon_header.setAttribute("class","header_icon_small");
 
 let exb_menu = false;
 
+let mob_menu = document.getElementsByClassName("mobile_menu");
+let lines = mob_menu[1].children;
+
+
 
 function Act_MobMenu(){
 if(exb_menu == false){
 
 header.style.display = "flex";
+mob_menu[1].style.background = "white";
+
+for(i=0;i < lines.length;++i){
+lines[i].style.background = "black";
+}
+
+
 exb_menu = true;
 
 }else{
