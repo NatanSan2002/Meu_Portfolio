@@ -8,12 +8,14 @@
 
 
 :root{
+    --mainWhite:white;
+    --mainBlack:black;
     --blueLight:#758ECD;
     --blueDark:#090C9B;
     --greenForest:#386150;
     --fontTitle:'Karla', Arial, sans-serif;
     --fontSubTitle:'Heebo', Arial, sans-serif;
-    --fontMenu:'Vazirmatn', Arial, sans-serif;
+    --fontOtherTitles:'Vazirmatn', Arial, sans-serif;
     }
 
 
@@ -139,7 +141,6 @@ padding-bottom: 13px;
 
 main{
     margin: 189px 0px 30px 0px;
-    padding:0px 2% 0px 2%;
 }
 
 
@@ -464,6 +465,7 @@ header li {
             animation: appears_words 2.7s;
                     }
                     }
+
                                             
 @media(max-width:512px){  
             .welcome .small_view h1#i1,h1#i2,h1#i3{
