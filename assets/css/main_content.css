@@ -52,6 +52,74 @@ padding: 2%;
 }
 
 
+.about .info {
+    background: var(--mainBlack);
+    color: white;
+    padding: 40px 4%;
+    width: 80%;
+    margin: 10% auto;
+}
+
+.about .info > div {
+    background: var(--mainWhite);
+    color: black;
+    padding: 15px 1%;
+    border-radius: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about .info > div .detalhes{
+    background: var(--mainBlack);
+    color: white;
+    padding: 2% 3% 3px 3%;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+
+}
+
+.about .info > div .detalhes .Black {
+background:var(--mainBlack);
+color:white;
+border-radius: 100px;
+padding: 0px 8%;
+line-height:1.5rem;
+}
+
+.about .info > div .detalhes .White{
+    background: var(--mainWhite);
+    color: black;
+    margin-top: 2%;
+    border-radius: 100px;
+    padding: 2px 8%;
+    width: 73%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+
+    .about .info > div .detalhes .White .linkedin_icon, .github_icon{
+    width: 60px;
+    }
+
+    .about .info > div .detalhes .White .img_container {
+     display: inline-block;
+     margin:0 15px;
+    }
+
+.about .info > div .img_container{
+    margin-right: 20px;
+}
+
+.about .info .My_Icon{
+    width: 228px;
+}
+
 
 /*Max-Widts*/
 
@@ -60,6 +128,19 @@ padding: 2%;
 .about .texto {
     width: 70%;
 }
+}
+
+@media(max-width:1326px){
+.about .info .My_Icon {
+    width: 179px;
+}
+.about .info > div .detalhes {
+    padding-top: 5% 
+}
+
+.about .info > div .detalhes .White {
+    min-height: 127px;
+    }
 }
 
 @media(max-width:882px){
@@ -71,13 +152,35 @@ padding: 2%;
         padding: 3% 5% 6% 5%;
     }
     }
+    @media(max-width:810px){
+    .about section {
+        padding: 2% 0;
+    }
+    .about .img_codes {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .about .info {
+        padding: 40px 0;
+        width: 100%;
+       
+    }
+}
 
 @media(max-width:760px){
-        .about .texto {
-            width: 96%;
-            background: #00000099;
+    .about .texto {
+        width: 96%;
+        background: #00000099;
         }
         }
+
+@media(max-width:634px){
+    .about .info > div{
+    flex-wrap: wrap;
+    border-radius: 45px
+    }
+}
 
 @media(max-width:474px){
         .about {
