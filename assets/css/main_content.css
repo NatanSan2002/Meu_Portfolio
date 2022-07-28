@@ -152,10 +152,41 @@ padding: 2%;
 }
 
 .about .info .My_Icon{
-    width: 228px;
+    width: 187px;
     border-radius: 50%;
-    border: 8px solid black;
+    border: 26px solid black;
 }
+
+
+[data-anime] {
+opacity:0;
+transition: 0.3s;
+}
+
+[data-anime="change_color"]{
+transform: translate3d(-50px,0,0);
+}
+
+[data-anime].animate{
+opacity: 1;
+transform: translate3d(0px,0px,0px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Max-Widts*/
@@ -184,10 +215,19 @@ padding: 2%;
     }
 }
 
+@media(max-width:1096px){
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about .info{
+    padding: 40px 2%;
+    width: 96%;   
+}
+}
+
 @media(max-width:882px){
     .about {
-    padding-left: 5%;
-    padding-right: 5%;
     padding-bottom: 150px;
     }
 
@@ -229,48 +269,52 @@ padding: 2%;
         width: 96%;
         background:black;
         }
+
+        .about .info{
+            background: var(--mainWhite);
+            margin: 10% auto 0 auto;
+            color:black;
+            padding: 40px 0 0 0;
+            }
+        
+            .about .info > div{
+            background: var(--mainBlack);
+            color: white;
+            flex-wrap: wrap;
+            border-radius: 45px;
+            justify-content: center;
+            padding: 5px 5px 14px 4px;
+            
+            }
+        
+            .about .info > div .detalhes {
+                background: var(--mainBlack);
+                border-radius: 0px 0px 26px 26px;
+                width: 100%;
+            }
+        
+            .about .info > div > .img_container {
+            width: 100%;
+            background: var(--mainWhite);
+            color: black;
+            display: flex;
+            justify-content: center;
+            border-radius: 45px 45px 0 0;
+            padding: 8% 0;
+            margin:0px;
+            }
+            .about .info > div .detalhes .Black{
+                text-align:center;
+                line-height: 1.9rem;
+                }
+            
         }
 
 @media(max-width:634px){
-    .about .info{
-    background: var(--mainWhite);
-    margin: 10% auto 0 auto;
-    color:black;
-    padding: 40px 0 0 0;
-    }
-
-    .about .info > div{
-    background: var(--mainBlack);
-    color: white;
-    flex-wrap: wrap;
-    border-radius: 45px;
-    justify-content: center;
-    padding: 5px 5px 14px 4px;
-    
-    }
-
-    .about .info > div .detalhes {
-        background: var(--mainBlack);
-        border-radius: 0px 0px 26px 26px;
-        width: 100%;
-    }
-
-    .about .info > div > .img_container {
-    width: 100%;
-    background: var(--mainWhite);
-    color: black;
-    display: flex;
-    justify-content: center;
-    border-radius: 45px 45px 0 0;
-    padding: 8% 0;
-    margin:0px;
-    }
-
     .title h1{
         margin: 10% 0;
     }
-
-    
+ 
 }
 
 @media(max-width:474px){
