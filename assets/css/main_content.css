@@ -1,3 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mate&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+:root{
+--fontSerifada: 'Zilla Slab', serif;;
+}
+
+
+
 .title {
     background: var(--mainBlack);
     padding: 5% 10% 5% 10%;
@@ -11,12 +21,23 @@
     font-family: var(--fontOtherTitles);
     background: var(--mainWhite);
     color: black;
-    padding: 3% 0 6% 0;
+    padding: 3%;
+    border-radius: 31px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+ .title h1 strong {
+        background: var(--mainBlack);
+        color: white;
+        padding: 0 19px;
+        font-style: normal;
+        
 }
 
 .about{
     background: var(--mainBlack);
-    padding: 3% 10%;
+    padding: 3% 10% 8% 10%;
 }
 
 .about .full_width{
@@ -30,9 +51,12 @@ padding: 2%;
 
 .about h1{
     font-size: 5rem;
-    margin: 1% auto 3% auto;
-    text-align: center;
+    margin: 6% -2.1%;
     font-family: var(--fontOtherTitles);
+    background: var(--mainBlack);
+    color: white;
+    font-weight: 300;
+    padding: 0 6%;
 }
 
 .about .texto {
@@ -41,7 +65,10 @@ padding: 2%;
     padding: 3% 2%;
     margin-bottom: 4%;
     width: 50%;
-    line-height: 1.5rem;
+    line-height: 1.6rem;
+    font-family: var(--fontSerifada);
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .about .img_codes{
@@ -49,6 +76,7 @@ padding: 2%;
     background-position: left center;
     background-size: cover;
     background-attachment: fixed;
+    margin: 10% auto 25% auto;
 }
 
 
@@ -57,17 +85,19 @@ padding: 2%;
     color: white;
     padding: 40px 4%;
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto 10% auto;
 }
 
 .about .info > div {
     background: var(--mainWhite);
     color: black;
-    padding: 15px 1%;
+    padding: 15px 1% 15px 6%;
     border-radius: 115px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 92%;
+    margin: 0 auto;
     
 }
 
@@ -84,11 +114,16 @@ padding: 2%;
 }
 
 .about .info > div .detalhes .Black {
-background:var(--mainBlack);
-color:white;
-border-radius: 100px;
-padding: 0px 8%;
-line-height:1.5rem;
+    background: var(--mainBlack);
+    color: white;
+    border-radius: 100px;
+    padding: 0px 8%;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+    font-family: var(--fontSerifada);
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 .about .info > div .detalhes .White{
@@ -118,6 +153,8 @@ line-height:1.5rem;
 
 .about .info .My_Icon{
     width: 228px;
+    border-radius: 50%;
+    border: 8px solid black;
 }
 
 
@@ -141,11 +178,32 @@ line-height:1.5rem;
 .about .info > div .detalhes .White {
     min-height: 127px;
     }
+
+    .about .info > div .detalhes .White .linkedin_icon, .github_icon {
+        width: 90px;
+    }
 }
 
 @media(max-width:882px){
     .about {
-        padding: 3% 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 150px;
+    }
+
+    .about h1{
+        margin: 45% -2.1% 10% -2.1%;
+    }
+
+    .title h1{
+    background: var(--mainBlack);
+    color: white;
+
+    }
+
+    .title h1 strong{
+    background: var(--mainWhite);
+    color: black;
     }
 
     .title {
@@ -154,11 +212,7 @@ line-height:1.5rem;
     }
     @media(max-width:810px){
     .about section {
-        padding: 2% 0;
-    }
-    .about .img_codes {
-        width: 96%;
-        margin: 0 auto;
+        padding: 2% 1%;
     }
 
     .about .info {
@@ -166,25 +220,63 @@ line-height:1.5rem;
         width: 100%;
        
     }
+
+
 }
 
 @media(max-width:760px){
     .about .texto {
         width: 96%;
-        background: #00000099;
+        background:black;
         }
         }
 
 @media(max-width:634px){
-    .about .info > div{
-    flex-wrap: wrap;
-    border-radius: 45px
+    .about .info{
+    background: var(--mainWhite);
+    margin: 10% auto 0 auto;
+    color:black;
+    padding: 40px 0 0 0;
     }
+
+    .about .info > div{
+    background: var(--mainBlack);
+    color: white;
+    flex-wrap: wrap;
+    border-radius: 45px;
+    justify-content: center;
+    padding: 5px 5px 14px 4px;
+    
+    }
+
+    .about .info > div .detalhes {
+        background: var(--mainBlack);
+        border-radius: 0px 0px 26px 26px;
+        width: 100%;
+    }
+
+    .about .info > div > .img_container {
+    width: 100%;
+    background: var(--mainWhite);
+    color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 45px 45px 0 0;
+    padding: 8% 0;
+    margin:0px;
+    }
+
+    .title h1{
+        margin: 10% 0;
+    }
+
+    
 }
 
 @media(max-width:474px){
         .about {
-            padding: 3% 3%;
+           padding-left: 3%;
+           padding-right: 3%;
             }
             }
 
