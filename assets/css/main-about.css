@@ -9,7 +9,7 @@
 
 
 .title {
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     padding: 5% 10% 5% 10%;
 }
 
@@ -19,7 +19,7 @@
     margin: 0 auto 0 auto;
     text-align: center;
     font-family: var(--fontOtherTitles);
-    background: var(--mainWhite);
+    background: var(--maincolor1);
     color: black;
     padding: 3%;
     border-radius: 31px;
@@ -28,7 +28,7 @@
 }
 
  .title h1 strong {
-        background: var(--mainBlack);
+        background: var(--maincolor2);
         color: white;
         padding: 0 19px;
         font-style: normal;
@@ -36,16 +36,16 @@
 }
 
 .about{
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     padding: 3% 10% 8% 10%;
 }
 
 .about .full_width{
-background: var(--mainWhite);
+background: var(--maincolor1);
 }
 
 .about section{
-background:var(--mainWhite);
+background:var(--maincolor1);
 padding: 2%;
 }
 
@@ -53,14 +53,14 @@ padding: 2%;
     font-size: 5rem;
     margin: 6% -2.1%;
     font-family: var(--fontOtherTitles);
-    background: var(--mainBlack);
+    background: var(--excolor2);
     color: white;
-    font-weight: 300;
+    font-weight: 200;
     padding: 0 6%;
 }
 
 .about .texto {
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     color: white;
     padding: 3% 2%;
     margin-bottom: 4%;
@@ -81,15 +81,16 @@ padding: 2%;
 
 
 .about .info {
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     color: white;
     padding: 40px 4%;
     width: 80%;
     margin: 5% auto 10% auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.322);
 }
 
 .about .info > div {
-    background: var(--mainWhite);
+    background: var(--maincolor1);
     color: black;
     padding: 15px 1% 15px 6%;
     border-radius: 115px;
@@ -102,7 +103,7 @@ padding: 2%;
 }
 
 .about .info > div .detalhes{
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     color: white;
     padding: 2% 3% 3px 3%;
     border-radius: 100px;
@@ -114,7 +115,7 @@ padding: 2%;
 }
 
 .about .info > div .detalhes .Black {
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     color: white;
     border-radius: 100px;
     padding: 0px 8%;
@@ -127,7 +128,7 @@ padding: 2%;
 }
 
 .about .info > div .detalhes .White{
-    background: var(--mainWhite);
+    background: var(--maincolor1);
     color: black;
     margin-top: 2%;
     border-radius: 100px;
@@ -140,7 +141,23 @@ padding: 2%;
 
     .about .info > div .detalhes .White .linkedin_icon, .github_icon{
     width: 60px;
+    border-radius: 50%;
     }
+
+    .about .info > div .detalhes .White .linkedin_icon:hover, .github_icon:hover{
+        animation: rotate 0.7s;
+        }
+
+        @keyframes rotate{
+        from{
+        transform: rotate(0deg);
+        background: transparent;
+        }
+        to{
+        transform: rotate(360deg);
+        background:var(--excolor1);
+        }
+        }
 
     .about .info > div .detalhes .White .img_container {
      display: inline-block;
@@ -154,7 +171,7 @@ padding: 2%;
 .about .info .My_Icon{
     width: 187px;
     border-radius: 50%;
-    border: 26px solid black;
+    border: 26px solid var(--maincolor2);
 }
 
 
@@ -232,17 +249,17 @@ transform: translate3d(0px,0px,0px);
     }
 
     .about h1{
-        margin: 45% -2.1% 10% -2.1%;
+        margin: 45% -1.1% 10% -1.1%;
     }
 
     .title h1{
-    background: var(--mainBlack);
+    background: var(--maincolor2);
     color: white;
 
     }
 
     .title h1 strong{
-    background: var(--mainWhite);
+    background: var(--maincolor1);
     color: black;
     }
 
@@ -271,14 +288,15 @@ transform: translate3d(0px,0px,0px);
         }
 
         .about .info{
-            background: var(--mainWhite);
+            background: var(--maincolor1);
             margin: 10% auto 0 auto;
             color:black;
             padding: 40px 0 0 0;
+            box-shadow: none;
             }
         
             .about .info > div{
-            background: var(--mainBlack);
+            background: var(--maincolor2);
             color: white;
             flex-wrap: wrap;
             border-radius: 45px;
@@ -288,14 +306,14 @@ transform: translate3d(0px,0px,0px);
             }
         
             .about .info > div .detalhes {
-                background: var(--mainBlack);
+                background: var(--maincolor2);
                 border-radius: 0px 0px 26px 26px;
                 width: 100%;
             }
         
             .about .info > div > .img_container {
             width: 100%;
-            background: var(--mainWhite);
+            background: var(--maincolor1);
             color: black;
             display: flex;
             justify-content: center;

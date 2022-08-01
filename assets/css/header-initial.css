@@ -8,11 +8,11 @@
 
 
 :root{
-    --mainWhite:white;
-    --mainBlack:black;
-    --blueLight:#758ECD;
-    --blueDark:#090C9B;
-    --greenForest:#386150;
+    --maincolor1:white;
+    --maincolor2:black;
+    --excolor1:#DB324D;
+    --excolor2:#A62639;
+    --excolor3:#386150;
     --fontTitle:'Karla', Arial, sans-serif;
     --fontSubTitle:'Heebo', Arial, sans-serif;
     --fontOtherTitles:'Vazirmatn', Arial, sans-serif;
@@ -31,7 +31,7 @@ font-size:16px;
 body{
 font-family: Arial, Helvetica, sans-serif;
 min-height:100vh;
-background: white;
+background: var(--maincolor1);
 
 }
 
@@ -44,7 +44,7 @@ a{
 header{
     display: flex;
     justify-content: space-around;
-    background:black;
+    background:var(--maincolor2);
     color: white;
     padding:13px 0px; 
     width: 100%;
@@ -90,8 +90,8 @@ header .img_container{
 
 header nav a{
     padding: 4px 15px;
-    background: white;
-    color:var(--greenForest);
+    background: var(--maincolor1);
+    color:var(--excolor3);
     border-radius: 20px;
     font-size: 1.0rem;
     font-weight: 500;
@@ -101,7 +101,7 @@ header nav a{
 }
 
 header nav a:hover{
-background:var(--greenForest);
+background:var(--excolor3);
 color:white;
 transition-duration: 0.3s;
 }
@@ -112,7 +112,7 @@ cursor:pointer;
 position: fixed;
 top:34px;
 right:30px;
-background: var(--greenForest);
+background: var(--excolor3);
 padding:4px 0px;
 border-radius: 10%;
 z-index: 1;
@@ -123,7 +123,7 @@ z-index: 1;
 .mobile_menu div {
     width:32px;
     height:3px;
-    background:white;
+    background:var(--maincolor1);
     margin:7px 6px ;
 }
 
@@ -158,14 +158,14 @@ font-size: 16px;
 }
 
 .welcome h1{
-font-size:8em;
+font-size: 6.8vw;;
 font-family: var(--fontTitle);
 
 }
 
 .welcome h2{
     font-size: 3.2em;
-    background: black;
+    background:var(--maincolor2);
     color: white;
     display: block;
     width: 60%;
@@ -182,7 +182,8 @@ font-family: var(--fontTitle);
     }
 
 .welcome h2>p{
-    animation: appears_words 1.7s
+    animation: appears_words 1.7s;
+    font-size: 2.66vw;
 }
 
 @keyframes alternate_color{
@@ -259,7 +260,11 @@ display:none;
         .welcome h1 {
         font-size: 7.5em;
             
-        }      
+        }     
+        
+        .welcome h2>p {
+            font-size: 1.0em;
+        }
         }
 @media(max-width:1444px){
        .welcome h1 {
@@ -414,7 +419,7 @@ header li {
                             }
 
 .welcome .small_view h1#i2{
-            background: black;
+            background:var(--maincolor2);
             color:white;
             animation: white_to_black 2s, 
             alternate_color 1.5s alternate infinite ease-in-out 3.5s;
