@@ -1,7 +1,16 @@
+.skills{
+    padding: 0px;
+}
+
+.skills > h1{
+margin:6% 0px
+}
+
+
 .skills > div {
     background: var(--maincolor2);
     color: white;
-    margin: 13% auto;
+    margin: 8% auto;
     width: 85%;
     padding: 12% 5%;
 }
@@ -19,20 +28,20 @@ div > .block_lings {
 
 
 .block_lings .container{
-        padding: 12px;
-        width: 18%;
-        height: 19vw;
-        display: flex;
-        justify-content: flex-start;
-        align-content: center;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
+    padding: 0 12px 12px 12px;
+    width: 18%;
+    height: 20vw;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 .block_lings > .par{
-    background: var(--maincolor2);
+    background:rgba(48, 47, 47, 0.829);
     color:white;
     }
 
@@ -41,9 +50,50 @@ div > .block_lings {
         }
 
 .block_lings .container .header{
-width: 50%;
+    width: 100%;
+    margin-bottom: 3%;
+    background: black;
+    height: 8vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10% 2% 2% 2%;
+}
+
+.block_lings .container .header h1{
+  font-size: 1.5rem;
+  font-weight: 400;
+    }
+
+.block_lings .container .header .img_container{
+    margin-top: 2%;
+}
+
+.block_lings .container .header img{
+             
+    width:4vw ;
+    
+          
 }
 
 .block_lings .container .content{
 width:90%;
+margin: auto 0;
+}
+
+
+
+
+
+
+
+/* Max-Widts */
+
+@media(max-width:1538px){
+    .skills > div {
+        width: 100%;
+        padding: 10% 0%;
+    }
+
 }
