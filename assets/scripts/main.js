@@ -1,3 +1,6 @@
+// Animação Sobre Mim
+
+
 let anime_color = document.querySelectorAll("[data-anime]");
 let anime_class = "animate";
 
@@ -19,3 +22,21 @@ window.addEventListener("scroll",function(){
     animeScroll();
 
 })
+
+
+
+// Animação Skills 
+
+let container= document.getElementsByClassName("container");
+
+for(i=0;i<container.length; ++i){
+
+    container[i].addEventListener("mouseover",function() {
+
+      this.children[1].classList.add("UpAnime");
+    
+    })
+}
+
+
+
