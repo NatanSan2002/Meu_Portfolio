@@ -34,6 +34,14 @@ for(i=0;i<container.length; ++i){
     container[i].addEventListener("mouseover",function() {
 
       this.children[1].classList.add("UpAnime");
+      this.children[1].children[0].classList.add("hidden_arrow");
+    
+    })
+
+    container[i].addEventListener("mouseout",function() {
+
+      this.children[1].classList.remove("UpAnime");
+      this.children[1].children[0].classList.remove("hidden_arrow");
     
     })
 }

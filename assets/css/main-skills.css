@@ -43,7 +43,7 @@ div > .block_lings {
 .block_lings .container{
     padding: 0 0px 12px 0px;
     width: 26%;
-    height: 30vw;
+    height: 34vw;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -107,10 +107,34 @@ div > .block_lings {
 width:90%;
 margin-bottom: 11%;
 transform: translateY(145px);
+transition:0.5s;
 }
 
-.UpAnime{
+.block_lings .container .content .up_arrow {
+    padding: 0px 10px;
+    background: red;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: white;
+    color: white;
+    position: relative;
+    bottom: 14%;
+    transition:0.5s;
+
+}
+
+.block_lings .container .content .hidden_arrow{
+opacity:0;
+padding: 0px;
+font-size:0;
+transition: 0.5s;
+}
+
+.block_lings .container .UpAnime{
     transform: translateY(0px);
+    transition: 0.3s;
 }
 
 .block_lings .container .content .github_link {
@@ -120,12 +144,12 @@ transform: translateY(145px);
     border-radius: 50px;
     width: 112px;
     margin: 5% auto 0 auto;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .block_lings .container .content .github_link:hover {
 background: rgb(88, 49, 110);
-transition-duration: 0.4s;
+transition-duration: 0.2s;
 }
 
 
