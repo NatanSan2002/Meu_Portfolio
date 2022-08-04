@@ -26,6 +26,7 @@ div > .block_lings {
     align-content: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-height: 65vw;
 }
 
 .skills > div > .info{
@@ -43,7 +44,7 @@ div > .block_lings {
 .block_lings .container{
     padding: 0 0px 12px 0px;
     width: 26%;
-    height: 34vw;
+    height: 20vw;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -53,8 +54,13 @@ div > .block_lings {
     margin: 2% 0;
     background: rgb(223, 223, 223);
     overflow: hidden;
-   
-    
+    transition:0.8s;
+      
+}
+
+.block_lings .full_view{
+    height: 34vw;
+    transition: 0.4s;
 }
 
 
@@ -80,7 +86,8 @@ div > .block_lings {
 
 .block_lings .container .header h1{
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 800;
+  color:white;
     }
 
 .block_lings .container .header .img_container{
@@ -106,7 +113,7 @@ div > .block_lings {
 .block_lings .container .content{
 width:90%;
 margin-bottom: 11%;
-transform: translateY(145px);
+transform: translateY(117px);
 transition:0.5s;
 }
 
@@ -122,7 +129,21 @@ transition:0.5s;
     position: relative;
     bottom: 14%;
     transition:0.5s;
+    animation: ball 1.6s alternate infinite ;
 
+}
+
+@keyframes ball{
+from{
+background: red;
+color:white;
+-webkit-text-stroke-color: white;
+}
+to{
+    background :white;
+    color:red;
+    -webkit-text-stroke-color: red;
+}
 }
 
 .block_lings .container .content .hidden_arrow{
@@ -134,7 +155,7 @@ transition: 0.5s;
 
 .block_lings .container .UpAnime{
     transform: translateY(0px);
-    transition: 0.3s;
+    transition: 0.7s;
 }
 
 .block_lings .container .content .github_link {
@@ -166,10 +187,35 @@ transition-duration: 0.2s;
 
 /* Max-Widts */
 
+@media(max-width:1708px){
+    .block_lings .container .content {
+        transform: translateY(5.5vw); 
+    }
+    .block_lings .container .UpAnime {
+        transform: translateY(0px);
+        transition: 0.7s;
+    }
+}
+
 @media(max-width:1538px){
     .skills > div {
         width: 100%;
         padding: 10% 0%;
+    }
+
+}
+
+
+@media(max-width:1442px){
+    .block_lings .container .content {
+    
+            transform: translateY(2.5vw);            
+        
+    }
+
+    .block_lings .container .content .up_arrow{
+     bottom:5%;
+
     }
 
 }
@@ -191,40 +237,87 @@ transition-duration: 0.2s;
 }
 
 
-@media(max-width:1178px){
-    .block_lings .container {
-        height: 40vw; 
+@media(max-width:1198px){
+    .block_lings .full_view {
+        height: 42vw;
     }
-
+    div > .block_lings {
+        min-height: 72vw;
+    }
 }
+
+
 
 @media(max-width:1010px){
     .block_lings .container {
             width: 47%;
+            height: 130px;
+            animation: color_background 1.8s alternate infinite ;
 
+}
+.block_lings .animeOFF{animation:none;}
+
+@keyframes color_background {
+from{
+    background:rgba(48, 47, 47);
+}
+to{
+    background:#9DA9A0;
 }
 }
 
-@media(max-width:868px){
+.block_lings .container .content {
+    padding-top: 12px;
+}
+
+
+
+.block_lings .full_view {
+    height: 54vw;
+}
+.block_lings .container .header {
+padding: 3% 0 0 0;
+}
+
+.block_lings .container .header h1 {
+    font-size: 2.0em;
+    font-weight: 300;
+}
+
+.block_lings .container .header img {
+    width: 76.88px;
+    top: -8px;
+    left: 12px;
+}
+
+.block_lings .container .header .img_container {
+    margin-top:0;
+    display: inline-block;
+    margin-right: auto;
+}
+
+.block_lings .container .header .v_img {
+    width: 62px;
+}
+
+}
+
+@media(max-width:683px){
     .block_lings .container {
-        height: 55vw;
+        width: 89%;
+    }
+    .block_lings .full_view {
+        height: 78vw;
     }
 }
 
-
-@media(max-width:654px){
-    .block_lings .container {
-        height: 60vw;
-    }
-
-    .block_lings .container .header img {
-        top: 15px;
-    }
-}
-@media(max-width:598px){
+@media(max-width:442px){
     .block_lings .container {
         width: 100%;
-        margin: 5% 0;
+    }
+    .block_lings .container {
+        margin: 8% 0;
     }
 }
+
 
