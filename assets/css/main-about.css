@@ -164,6 +164,7 @@ margin-right: 3px;
 
     .about .info > div .detalhes .White .linkedin_icon:hover, .github_icon:hover{
         animation: rotate 0.7s;
+        background: var(--excolor1);
         }
 
         @keyframes rotate{

@@ -27,19 +27,20 @@ div > .block_lings {
     flex-wrap: wrap;
     justify-content: space-around;
     min-height: 65vw;
+    font-size: 16px;
 }
 
 .skills > div > .info{
-    padding: 57px 2%;
+    padding: 27px 2%;
     width: 50%;
-    background: white;
+    background: var(--maincolor1);
     color: black;
     margin: 0 0 2% auto;
     border-radius: 27px;
-    font-weight: 500;
-    font-size: 1.4rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    font-style: italic;
 }
-
 
 .block_lings .container{
     padding: 0 0px 12px 0px;
@@ -52,7 +53,7 @@ div > .block_lings {
     flex-direction: column;
     align-items: center;
     margin: 2% 0;
-    background: rgb(223, 223, 223);
+    background: rgb(231, 231, 231);
     overflow: hidden;
     transition:0.8s;
       
@@ -99,7 +100,7 @@ div > .block_lings {
     position: relative;
     top: 2vw;
     background:white;
-    border-radius: 39px;
+    border-radius: 50%;
     border: 2px solid white;
               
 }
@@ -123,6 +124,7 @@ transition:0.5s;
     display: inline-block;
     border-radius: 50%;
     text-align: center;
+    font-size: 16px;
     -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: white;
     color: white;
@@ -187,6 +189,15 @@ transition-duration: 0.2s;
 
 /* Max-Widts */
 
+@media(min-width:1920px){
+    .block_lings .container .content {
+        transform: translateY(5.8vw);
+    }
+    .block_lings .container .UpAnime {
+        transform: translateY(0px);
+    }
+}
+
 @media(max-width:1708px){
     .block_lings .container .content {
         transform: translateY(5.5vw); 
@@ -201,6 +212,10 @@ transition-duration: 0.2s;
     .skills > div {
         width: 100%;
         padding: 10% 0%;
+    }
+
+    .skills > div > .info{
+        margin-left: 40%;
     }
 
 }
@@ -302,6 +317,14 @@ padding: 3% 0 0 0;
 
 }
 
+@media(max-width:770px){
+    .skills > div > .info {
+    width: 95%;
+    margin: 0 auto 1% auto;
+    border-radius: 0px;
+    }
+}
+
 @media(max-width:683px){
     .block_lings .container {
         width: 89%;
@@ -309,15 +332,25 @@ padding: 3% 0 0 0;
     .block_lings .full_view {
         height: 78vw;
     }
+    div > .block_lings {
+        padding: 13% 0%;
+    }
 }
 
 @media(max-width:442px){
     .block_lings .container {
         width: 100%;
-    }
-    .block_lings .container {
         margin: 8% 0;
     }
+
+    .block_lings .full_view {
+        height: 98vw;
+    }
+
+    .block_lings .container .content{
+     font-size: 0.9em;
+    }
+
 }
 
 
