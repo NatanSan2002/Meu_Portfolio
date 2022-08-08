@@ -9,20 +9,61 @@ padding-left: 0; padding-right: 0;
     padding: 4% 5%;
 }
 
-.projects .square {
+.projects .content {
     background: white;
     width: 26%;
-    padding: 1% 5px;
+    padding: 5px 5px 0px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 8%;
+    border-radius: 8% 8% 3% 3%;
+}
+
+.projects .content > .img_container{
+background:rgba(48, 47, 47);
+
+}
+
+.projects .content > .img_container img{
+    width: 83%;
+    display: block;
+    margin: 3% auto 1% auto;
+    }
+
+.projects .content p{
+margin: 2%;
 }
 
 
+.projects .details{
+    background:rgba(48, 47, 47);
+    color: white;
+    width: 100%;
+    border-radius: 45px;
+    padding: 4px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    max-height: 13px;
+    overflow: hidden;
+}
 
-.projects > div .img_container img{
-    width: 82%;
-    display: block;
-    margin: 3% auto;
-    }
+
+.projects .details img{
+    width: 29px;
+    margin: 3px 4%;
+    background: white;
+    border-radius: 50%;
+}
+
+.projects >div > .linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects > div > .info{
+    background: var(--maincolor1);
+    color: black;
+    margin: 4% 0;
+    padding: 5% 0;
+}

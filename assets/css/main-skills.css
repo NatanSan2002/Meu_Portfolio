@@ -48,7 +48,7 @@ div > .block_lings {
     flex-direction: column;
     align-items: center;
     margin: 2% 0;
-    background: rgb(231, 231, 231);
+    background: rgb(240, 240, 240);
     overflow: hidden;
     transition:0.8s;
       
