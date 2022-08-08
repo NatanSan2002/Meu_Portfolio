@@ -2,11 +2,6 @@
     padding: 0px;
 }
 
-.skills > h1{
-margin:6% 0px
-}
-
-
 .skills > div {
     background: var(--maincolor2);
     color: white;

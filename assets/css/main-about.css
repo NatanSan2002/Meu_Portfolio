@@ -51,7 +51,7 @@ padding: 2%;
 
 section > h1{
     font-size: 3.6rem;
-    margin: 6% -6.8%;
+    margin: 6% 0px;
     font-family: var(--fontOtherTitles);
     background: var(--maincolor2);
     color: white;
