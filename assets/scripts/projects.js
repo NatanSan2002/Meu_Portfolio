@@ -11,19 +11,33 @@ this.web = web;
 }
 
 data_projeto (data){
-let  full = new Date(...data);
-const dia = String(full.getDate()).padStart(2,"0");
-const mes = String(full.getMonth()).padStart(2,"0");
-const ano = full.getFullYear();
+    let atual = new Date();
 
-const date =  `${dia}/${mes}/${ano}`;
+    let projeto = data[0] + "-";
+    for(i=1;i<data.length;++i){
+    projeto += String(data[i]) + "-";
+    ;
+    }
+    
+    projeto = new Date(projeto);
 
-this.data = date;
+    const tempo = Math.abs(atual - projeto);
+//            1000ms * 60seg
+    const dias    =   1000 * 60 * 60 * 24;
+    const semanas =   dias * 7;
+    const meses   =   semanas * 4;
+    const anos    =   meses * 12;
+    
+    
+
+    
+    this.data = Math.ceil(tempo / meses);
+    
 }
 
 }
 
-
+// ANO / Mes / Dia
 
 const LF = new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
@@ -31,8 +45,11 @@ const LF = new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF.png",
 const test = new Project ("Teste",[2022,10,9],"HTML/CSS","LF.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
 
+const test2 = new Project ("Teste",[2022,08,08],"HTML/CSS","LF.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
 
-let projects_list = [LF,test] ;
+
+let projects_list = [LF,test,test2] ;
 
 console.log(projects_list)
 
