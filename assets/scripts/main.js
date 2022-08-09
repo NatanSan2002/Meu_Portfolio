@@ -27,7 +27,6 @@ window.addEventListener("scroll",function(){
 
 // Animação Skills 
 
-//variaveis gerais 
 
 let arrow = document.getElementsByClassName("up_arrow");
 let arrows = [];
@@ -81,6 +80,8 @@ for(i=0;i<container.length; ++i){
     
     })
 }
+
+
 
 
 

@@ -64,6 +64,16 @@ margin: 2%;
 .projects > div > .info{
     background: var(--maincolor1);
     color: black;
-    margin: 4% 0;
-    padding: 5% 0;
+    margin: 4% -5%;
+    padding: 4% 10%;
+}
+
+.projects > div > .info .text{
+width: 70%;
+line-height: 1.5em;
+}
+
+.info > .text h1{
+font-size: 2.0rem;
+margin-bottom: 4%;
 }
