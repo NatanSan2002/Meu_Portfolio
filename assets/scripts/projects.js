@@ -23,35 +23,64 @@ data_projeto (data){
 
     const tempo = Math.abs(atual - projeto);
 //            1000ms * 60seg
-    const dias    =   1000 * 60 * 60 * 24;
+    const horas   =   1000 * 60 * 60 
+    const dias    =   horas * 24;
     const semanas =   dias * 7;
     const meses   =   semanas * 4;
     const anos    =   meses * 12;
     
-    
 
     
-    this.data = Math.ceil(tempo / meses);
-    
+    if(tempo / anos >= 1){
+    this.data = Math.floor(tempo / anos)+ " anos";
+    }else if (tempo / meses >= 1){
+    this.data = Math.floor(tempo / meses)+ " meses";
+    }else if(tempo / semanas >= 1){
+    this.data = Math.floor(tempo / semanas)+ " semanas";
+    }else if(tempo / dias >= 1){
+    this.data = Math.floor(tempo / dias)+ " dias";
+}else{this.data = Math.floor(tempo / horas)+ " horas"}
+
+
 }
 
 }
 
-// ANO / Mes / Dia
-
-const LF = new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
-
-const test = new Project ("Teste",[2022,10,9],"HTML/CSS","LF.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
-
-const test2 = new Project ("Teste",[2022,08,08],"HTML/CSS","LF.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com");
+                                 // ANO / Mes / Dia
 
 
-let projects_list = [LF,test,test2] ;
+let pj_list = [
 
-console.log(projects_list)
+new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste",[2022,7,22],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
+
+
+] 
+
+console.log(pj_list)
+
+
+
+
+
+let linha = document.querySelector(".linha");
+
+for(i=0;i<pj_list.length;++i){
+
+linha.innerHTML += `<div class="content">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+
+}
+
+
+
+
+
 
 
 
