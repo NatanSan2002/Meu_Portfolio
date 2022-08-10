@@ -77,3 +77,15 @@ line-height: 1.5em;
 font-size: 2.0rem;
 margin-bottom: 4%;
 }
+
+.projects .aba {
+background:white;
+font-size: 40px;
+margin-top: 40px;
+text-align: center;
+color: black;
+}
+
+.projects .aba input {
+background: black;
+}

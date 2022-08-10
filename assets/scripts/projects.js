@@ -22,6 +22,8 @@ data_projeto (data){
     projeto = new Date(projeto);
 
     const tempo = Math.abs(atual - projeto);
+
+    this.data_pura = tempo;
 //            1000ms * 60seg
     const horas   =   1000 * 60 * 60 
     const dias    =   horas * 24;
@@ -57,25 +59,82 @@ new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 new Project ("Teste",[2022,7,22],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste",[2022,08,08],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+
+
+
+
 
 
 ] 
 
-console.log(pj_list)
+
+
+pj_list.sort(
+    function ( a, b ) {
+        if ( a.data_pura < b.data_pura ){
+          return -1;} else if ( a.data_pura > b.data_pura){
+          return true;
+        }
+    }
+      
+)
+
+console.log(pj_list);
+
+let number_containers = 6;
+
+let position = 0;
+
+
+function Push_Projects(position=0) {
+
+    let linha;
+    
+    for(i=position;i<position+number_containers;++i){
+    console.log(i)
+    // if(i>5){apagar todos os itens da filheira} dps o código continua normal 
+    if(i<3){
+    linha = document.querySelectorAll(".linha")[0];
+    }else{ linha = document.querySelectorAll(".linha")[1];} 
+    
+    linha.innerHTML += `<div class="content">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+    
+    }
+    
+    }
+    
+    Push_Projects();
 
 
 
 
-
-let linha = document.querySelector(".linha");
-
-for(i=0;i<pj_list.length;++i){
-
-linha.innerHTML += `<div class="content">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
-
+function next(){
+position += number_containers;
+Push_Projects(position);
 }
+
+
 
 
 
