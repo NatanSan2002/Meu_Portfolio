@@ -119,17 +119,18 @@ new Project ("Teste17",[2022,08,08],"HTML/CSS","LF_screen.png",
 
 
 
-pj_list.sort(
-    function ( a, b ) {
+function Dos_Recentes() {
+    pj_list.sort(function ( a, b ) {
         if ( a.data_pura < b.data_pura ){
           return -1;} else if ( a.data_pura > b.data_pura){
           return true;
         }
     }
-      
 )
+}
 
-console.log(pj_list);
+Dos_Recentes();
+
 
 let number_containers = 6;
 
@@ -137,18 +138,23 @@ let position = 0;
 
 
 
-function Push_Projects(position=0) {
+function Push_Projects(p=0) {
 
     let linha;
     
-    for(i=position;i<position+number_containers;++i){
+    for(i=p;i<p+number_containers;++i){
     console.log(i);
 
-    if(i< number_containers / 2 + position){
+    if(i< number_containers / 2 + p){
     linha = document.querySelectorAll(".linha")[0]; console.log("linha 1")
     }else{ linha = document.querySelectorAll(".linha")[1]; console.log("linha 2")} 
     
     linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+
+    if(i < pj_list.length-1){
+        position = i+1; }else{
+            position = i;
+        }
     
     }
     
@@ -156,19 +162,51 @@ function Push_Projects(position=0) {
     
     Push_Projects();
 
-
-
-
-function next(){
+    function Clean () {
     let sqs = document.querySelectorAll(".square");
     for(t=0;t<sqs.length;++t){
      sqs[t].remove();
-     console.log(sqs);
     } 
+}
 
-position += number_containers;
+
+function next(){
+    
+Clean();
+
 Push_Projects(position);
 }
+
+
+
+function prev(){
+
+    Clean();
+
+    let linha;
+    let alt = 0;
+
+    /* Preciso que volte o dobro do number conteiners, */
+     
+    for(i=position;i>number_containers;--i){
+    console.log(` i = ${i} nc = ${number_containers}`);
+
+    if(i < number_containers / 2 + position - alt - 1){
+    linha = document.querySelectorAll(".linha")[0]; console.log("linha 1")
+    }else{ linha = document.querySelectorAll(".linha")[1]; console.log("linha 2")} 
+    
+    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+
+    position = i;
+    alt++;
+    
+    }
+
+    
+}
+
+
+
 
 
 

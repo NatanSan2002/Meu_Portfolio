@@ -84,8 +84,19 @@ font-size: 40px;
 margin-top: 40px;
 text-align: center;
 color: black;
+padding: 10px;
 }
 
 .projects .aba input {
-background: black;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 7px 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.projects .aba input:hover {
+    background: white;
+    color: black;
 }
