@@ -9,7 +9,7 @@ padding-left: 0; padding-right: 0;
     padding: 4% 5%;
 }
 
-.projects .content {
+.projects .square {
     background: white;
     width: 26%;
     padding: 5px 5px 0px 5px;
@@ -19,18 +19,18 @@ padding-left: 0; padding-right: 0;
     border-radius: 8% 8% 3% 3%;
 }
 
-.projects .content > .img_container{
+.projects .square > .img_container{
 background:rgba(48, 47, 47);
 
 }
 
-.projects .content > .img_container img{
+.projects .square > .img_container img{
     width: 83%;
     display: block;
     margin: 3% auto 1% auto;
     }
 
-.projects .content p{
+.projects .square p{
 margin: 2%;
 }
 

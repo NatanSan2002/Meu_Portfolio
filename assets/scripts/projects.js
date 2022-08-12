@@ -56,29 +56,58 @@ let pj_list = [
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste",[2022,7,22],"HTML/CSS","LF_screen.png",
+new Project ("Teste1",[2022,7,22],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
 new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste3",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste4",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste5",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste6",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste7",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste8",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste9",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste10",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste11",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste12",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste13",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste14",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste15",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste16",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste17",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
+
+
 
 
 
@@ -107,18 +136,19 @@ let number_containers = 6;
 let position = 0;
 
 
+
 function Push_Projects(position=0) {
 
     let linha;
     
     for(i=position;i<position+number_containers;++i){
-    console.log(i)
-    // if(i>5){apagar todos os itens da filheira} dps o código continua normal 
-    if(i<3){
-    linha = document.querySelectorAll(".linha")[0];
-    }else{ linha = document.querySelectorAll(".linha")[1];} 
+    console.log(i);
+
+    if(i< number_containers / 2 + position){
+    linha = document.querySelectorAll(".linha")[0]; console.log("linha 1")
+    }else{ linha = document.querySelectorAll(".linha")[1]; console.log("linha 2")} 
     
-    linha.innerHTML += `<div class="content">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
     
     }
     
@@ -130,6 +160,12 @@ function Push_Projects(position=0) {
 
 
 function next(){
+    let sqs = document.querySelectorAll(".square");
+    for(t=0;t<sqs.length;++t){
+     sqs[t].remove();
+     console.log(sqs);
+    } 
+
 position += number_containers;
 Push_Projects(position);
 }
