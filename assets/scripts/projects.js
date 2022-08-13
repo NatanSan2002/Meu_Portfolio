@@ -117,10 +117,6 @@ new Project ("Teste19",[2022,08,08],"HTML/CSS","LF_screen.png",
 
 
 
-
-
-
-
 ] 
 
 
@@ -149,31 +145,30 @@ function Clean () {
     } 
 }
 
-let last;
+
 let vezes;
-let andou;
+let passos;
 
 function Push_Projects(p=0) {
 
     Clean();
 
     let linha;
-  andou = 0;
+    passos = 0;
     
     
     if(p == position && p+number_containers>pj_list.length-1){
     vezes = pj_list.length-p;
-     last = true;
-    //console.log("vezes1 :"+vezes);
     }else{
     vezes = number_containers;
     }
 
     
     for(i=p,y=0;y<vezes;++i,++y){
+    console.log("vezes: "+vezes)
     console.log("array: "+i);
     //console.log("vezes: "+vezes)
-    ++andou;
+    ++passos;
   
     if(y< number_containers / 2){
     linha = document.querySelectorAll(".linha")[0];
@@ -186,12 +181,13 @@ function Push_Projects(p=0) {
    
         position = i+1; 
 
-        //console.log("aaa:"+andou)
+        
     
     }
 
+    vezes = number_containers;
     
-    console.log("position Next: "+position)
+    
     }
     
     Push_Projects();
@@ -199,19 +195,13 @@ function Push_Projects(p=0) {
 
 
 function next(){  
-Push_Projects(position);
-//console.log(`andou: ${position-number_containers-andou}`);
+    Push_Projects(position);
 }
 
 
 
 function prev(){
-    
-    Push_Projects(position-vezes-andou)
-    
-
-    
-   
+    Push_Projects(position-vezes-passos)      
 } 
 
 
