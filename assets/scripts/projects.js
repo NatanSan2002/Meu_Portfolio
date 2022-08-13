@@ -105,6 +105,12 @@ new Project ("Teste16",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
 new Project ("Teste17",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste18",[2022,08,08],"HTML/CSS","LF_screen.png",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+
+new Project ("Teste19",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
 
 
@@ -136,74 +142,77 @@ let number_containers = 6;
 
 let position = 0;
 
-
-
-function Push_Projects(p=0) {
-
-    let linha;
-    
-    for(i=p;i<p+number_containers;++i){
-    console.log(i);
-
-    if(i< number_containers / 2 + p){
-    linha = document.querySelectorAll(".linha")[0]; console.log("linha 1")
-    }else{ linha = document.querySelectorAll(".linha")[1]; console.log("linha 2")} 
-    
-    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
-
-    if(i < pj_list.length-1){
-        position = i+1; }else{
-            position = i;
-        }
-    
-    }
-    
-    }
-    
-    Push_Projects();
-
-    function Clean () {
+function Clean () {
     let sqs = document.querySelectorAll(".square");
     for(t=0;t<sqs.length;++t){
      sqs[t].remove();
     } 
 }
 
+let last;
+let vezes;
+let andou;
 
-function next(){
+function Push_Projects(p=0) {
+
+    Clean();
+
+    let linha;
+  andou = 0;
     
-Clean();
+    
+    if(p == position && p+number_containers>pj_list.length-1){
+    vezes = pj_list.length-p;
+     last = true;
+    //console.log("vezes1 :"+vezes);
+    }else{
+    vezes = number_containers;
+    }
 
+    
+    for(i=p,y=0;y<vezes;++i,++y){
+    console.log("array: "+i);
+    //console.log("vezes: "+vezes)
+    ++andou;
+  
+    if(y< number_containers / 2){
+    linha = document.querySelectorAll(".linha")[0];
+    }else{ 
+    linha = document.querySelectorAll(".linha")[1];
+    } 
+    
+    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+
+   
+        position = i+1; 
+
+        //console.log("aaa:"+andou)
+    
+    }
+
+    
+    console.log("position Next: "+position)
+    }
+    
+    Push_Projects();
+
+
+
+function next(){  
 Push_Projects(position);
+//console.log(`andou: ${position-number_containers-andou}`);
 }
 
 
 
 function prev(){
-
-    Clean();
-
-    let linha;
-    let alt = 0;
-
-    /* Preciso que volte o dobro do number conteiners, */
-     
-    for(i=position;i>number_containers;--i){
-    console.log(` i = ${i} nc = ${number_containers}`);
-
-    if(i < number_containers / 2 + position - alt - 1){
-    linha = document.querySelectorAll(".linha")[0]; console.log("linha 1")
-    }else{ linha = document.querySelectorAll(".linha")[1]; console.log("linha 2")} 
     
-    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
-
-    position = i;
-    alt++;
+    Push_Projects(position-vezes-andou)
     
-    }
 
     
-}
+   
+} 
 
 
 
