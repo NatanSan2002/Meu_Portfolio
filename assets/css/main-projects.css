@@ -6,7 +6,38 @@ padding-left: 0; padding-right: 0;
 .projects > div{
     background: var(--maincolor2);
     width: 90%;
-    padding: 4% 5%;
+    padding: 2% 5% 4% 5%;
+}
+
+.projects .ordenacao {
+    background: white;
+    color: black;
+    padding: 0 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -5% 2% -5%;
+
+}
+
+.ordenacao > h2 {
+margin-left: 10%;
+}
+
+.ordenacao > div {
+    background: var(--excolor3);
+    margin-right: 3%;
+    padding: 6px 10px;
+    width: 139px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ordenacao > div img{
+    width: 26px;
+    background: white;
+    border-radius: 50%;
 }
 
 .projects .square {

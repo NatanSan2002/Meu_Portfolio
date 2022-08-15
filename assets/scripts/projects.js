@@ -56,61 +56,61 @@ let pj_list = [
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste1",[2022,7,22],"HTML/CSS","LF_screen.png",
+new Project ("Teste1",[2022,07,10],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
 new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste3",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste3",[2022,08,07],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste4",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste4",[2022,08,06],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste5",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste5",[2022,08,05],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste6",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste6",[2022,08,03],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste7",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste7",[2022,08,02],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste8",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste8",[2022,08,01],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste9",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste9",[2022,07,29],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste10",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste10",[2022,07,28],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste11",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste11",[2022,07,27],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste12",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste12",[2022,07,26],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste13",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste13",[2022,07,25],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste14",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste14",[2022,07,24],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste15",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste15",[2022,07,23],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste16",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste16",[2022,07,22],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste17",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste17",[2022,07,21],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste18",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste18",[2022,07,20],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste19",[2022,08,08],"HTML/CSS","LF_screen.png",
+new Project ("Teste19",[2022,07,19],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
 
 
@@ -121,7 +121,7 @@ new Project ("Teste19",[2022,08,08],"HTML/CSS","LF_screen.png",
 
 
 
-function Dos_Recentes() {
+function Mais_Recentes() {
     pj_list.sort(function ( a, b ) {
         if ( a.data_pura < b.data_pura ){
           return -1;} else if ( a.data_pura > b.data_pura){
@@ -131,7 +131,22 @@ function Dos_Recentes() {
 )
 }
 
-Dos_Recentes();
+
+function Mais_Antigos() {
+    pj_list.sort(function ( a, b ) {
+        if ( a.data_pura > b.data_pura ){
+          return -1;} else if ( a.data_pura < b.data_pura){
+          return true;
+}
+    }
+)
+}
+
+
+
+Mais_Recentes();
+
+
 
 
 let number_containers = 6;
@@ -195,13 +210,17 @@ function Push_Projects(p=0) {
 
 
 function next(){  
+    if(position>=pj_list.length-1){}else{
     Push_Projects(position);
+}
 }
 
 
 
 function prev(){
-    Push_Projects(position-vezes-passos)      
+    if(position<=number_containers){}else{
+    Push_Projects(position-vezes-passos)   
+    }   
 } 
 
 
