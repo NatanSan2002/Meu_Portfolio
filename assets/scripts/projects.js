@@ -119,7 +119,27 @@ new Project ("Teste19",[2022,07,19],"HTML/CSS","LF_screen.png",
 
 ] 
 
+console.log("div: "+pj_list.length)
 
+let number_containers = 6;
+
+let position = 0;
+
+
+let pags = pj_list.length / number_containers;
+
+let abas_totais = document.getElementById("abas_totais");
+
+
+if(Number.isInteger(pags)){
+abas_totais.innerHTML = pags;
+}else{
+abas_totais.innerHTML = parseFloat(pags+1).toFixed(0);
+} 
+
+let atual_pag = 0;
+
+let ordem = document.getElementById("funcao_ord");
 
 function Mais_Recentes() {
     pj_list.sort(function ( a, b ) {
@@ -129,6 +149,9 @@ function Mais_Recentes() {
         }
     }
 )
+atual_pag = 0;
+ordem.innerHTML = "Mais recentes";
+
 }
 
 
@@ -140,6 +163,8 @@ function Mais_Antigos() {
 }
     }
 )
+atual_pag = 0;
+ordem.innerHTML = "Mais antigos";
 }
 
 
@@ -147,11 +172,6 @@ function Mais_Antigos() {
 Mais_Recentes();
 
 
-
-
-let number_containers = 6;
-
-let position = 0;
 
 function Clean () {
     let sqs = document.querySelectorAll(".square");
@@ -162,9 +182,21 @@ function Clean () {
 
 
 let vezes;
+
 let passos;
 
-function Push_Projects(p=0) {
+function Push_Projects(p=0,ord) {
+
+    if(p == position || ord == true){
+        ++atual_pag;
+        document.getElementById("aba_atual").innerHTML = atual_pag;
+    }else{
+        --atual_pag;
+        document.getElementById("aba_atual").innerHTML = atual_pag;
+    }
+
+    
+
 
     Clean();
 
@@ -207,7 +239,7 @@ function Push_Projects(p=0) {
     
     Push_Projects();
 
-
+    
 
 function next(){  
     if(position>=pj_list.length-1){}else{

@@ -38,6 +38,11 @@ margin-left: 10%;
     width: 26px;
     background: white;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.ordenacao > div img:hover{
+    opacity: 0.70;
 }
 
 .projects .square {
@@ -110,15 +115,60 @@ margin-bottom: 4%;
 }
 
 .projects .aba {
-background:white;
-font-size: 40px;
-margin-top: 40px;
-text-align: center;
-color: black;
-padding: 10px;
+    margin: 3% -5% 0 -5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 6%;
 }
 
-.projects .aba input {
+.projects .aba .position{
+    background: white;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    padding: 10px 1px 10px 9px;
+    border-radius: 74px;
+    width: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p#divisivel  {
+    font-size: 58px;
+    margin-left: 2%;
+    color: #E0BE36;
+    font-style: italic;
+}
+
+p#aba_atual  {
+    background: rgba(48, 47, 47);
+    color: white;
+    font-size: 21px;
+    border-radius: 50%;
+    padding: 0px 6px;
+    position: relative;
+    bottom: 16px;
+    left: 8px;
+}
+
+p#abas_totais  {
+    font-size: 37px;
+    background: #818589;
+    color: #F06543;
+    border-radius: 50%;
+    padding: 0 10px;
+    position: relative;
+    top: 15px;
+    right: 4px;
+}
+
+
+
+.projects .aba > input {
     background: black;
     color: white;
     border-radius: 50%;
