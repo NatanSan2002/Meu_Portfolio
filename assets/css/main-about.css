@@ -199,7 +199,7 @@ opacity:0;
 transition: 0.3s;
 }
 
-[data-anime="change_color"]{
+[data-anime="change_translate"]{
 transform: translate3d(-50px,0,0);
 }
 

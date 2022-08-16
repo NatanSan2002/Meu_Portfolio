@@ -47,14 +47,27 @@ margin-left: 10%;
 
 .projects .square {
     background: white;
-    /*opacity: 0.8;*/
+    opacity: 0.8;
     width: 26%;
     padding: 5px 5px 0px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     border-radius: 8% 8% 3% 3%;
+    animation: push_right 0.7s;
 }
+
+@keyframes push_right{
+from{
+transform: translateX(-10vw);
+}
+to{
+    transform: translateX(0px);
+}
+}
+
+
 
 .projects .square > .img_container{
 background:rgba(48, 47, 47);
@@ -68,10 +81,11 @@ background:rgba(48, 47, 47);
     }
 
 .projects .square p{
-margin: 2%;
+margin: 2% 3% 2% 11%;
 }
 
 .projects .square .data{
+    padding: 1% 0;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -80,6 +94,8 @@ margin: 2%;
 
 .projects .square .data img{
 width: 33px;
+border-radius: 50%;
+background:#7393B3;
 }
 
 
