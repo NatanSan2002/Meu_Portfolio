@@ -6,7 +6,7 @@ padding-left: 0; padding-right: 0;
 .projects > div{
     background: var(--maincolor2);
     width: 90%;
-    padding: 2% 5% 4% 5%;
+    padding: 2% 5%;
 }
 
 .projects .ordenacao {
@@ -47,6 +47,7 @@ margin-left: 10%;
 
 .projects .square {
     background: white;
+    /*opacity: 0.8;*/
     width: 26%;
     padding: 5px 5px 0px 5px;
     display: flex;
@@ -68,6 +69,17 @@ background:rgba(48, 47, 47);
 
 .projects .square p{
 margin: 2%;
+}
+
+.projects .square .data{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.projects .square .data img{
+width: 33px;
 }
 
 
@@ -115,7 +127,7 @@ margin-bottom: 4%;
 }
 
 .projects .aba {
-    margin: 3% -5% 0 -5%;
+    margin: 8% -5% 0 -5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -168,16 +180,54 @@ p#abas_totais  {
 
 
 
-.projects .aba > input {
-    background: black;
-    color: white;
-    border-radius: 50%;
-    padding: 7px 10px;
-    border: none;
-    font-size: 1.2rem;
+.projects .aba > .button_aba{
+background: white;
+border-radius: 50%;
+width: 72px; height:72px;
 }
 
-.projects .aba input:hover {
-    background: white;
-    color: black;
+.projects .aba > .button_aba img{
+    width: 72px;
+    position:relative;
 }
+
+.projects .aba > .button_aba img:hover{
+animation: aumentar 0.7s alternate infinite,
+mexer_left 0.7s alternate infinite;
+}
+
+img#button_Prev:hover{
+animation: mexer_right 0.8s alternate infinite,
+aumentar 0.8s alternate infinite;
+}
+
+
+@keyframes aumentar {
+from{
+width: 60px;
+}
+to{
+width:95px;
+bottom:7px;
+}
+}
+
+@keyframes mexer_left{
+from{
+    left:0px;
+    
+}
+to{
+left:4px;
+
+}
+}
+
+@keyframes mexer_right{
+    from{
+    right:10px;
+    }
+    to{
+    right:0px;
+    }
+    }

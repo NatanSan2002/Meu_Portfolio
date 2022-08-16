@@ -56,7 +56,7 @@ let pj_list = [
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
-new Project ("Teste1",[2022,07,10],"HTML/CSS","LF_screen.png",
+new Project ("Teste1",[2022,07,10],"PHP","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
 
 new Project ("Teste2",[2022,08,08],"HTML/CSS","LF_screen.png",
@@ -214,7 +214,7 @@ function Push_Projects(p=0,ord) {
     for(i=p,y=0;y<vezes;++i,++y){
     console.log("vezes: "+vezes)
     console.log("array: "+i);
-    //console.log("vezes: "+vezes)
+    
     ++passos;
   
     if(y< number_containers / 2){
@@ -222,8 +222,15 @@ function Push_Projects(p=0,ord) {
     }else{ 
     linha = document.querySelectorAll(".linha")[1];
     } 
+
+    let icon;
+    let pj = pj_list[i];
+
+    if(pj.ling == "PHP"){
+    icon = "php_icon.png";
+    }
     
-    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <p> há ${pj_list[i].data} </p> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+    linha.innerHTML += `<div class="square">  <h1>${pj_list[i].nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj_list[i].img}" alt="foto_projeto"> </div> <div class="data"> <p> há ${pj_list[i].data} </p> <img src="./assets/imagens/skills/${icon}"> </div> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
 
    
         position = i+1; 
