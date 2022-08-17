@@ -130,6 +130,9 @@ let pags = pj_list.length / number_containers;
 
 let abas_totais = document.getElementById("abas_totais");
 
+let about = document.querySelector(".info_project");
+
+
 
 if(Number.isInteger(pags)){
 abas_totais.innerHTML = pags;
@@ -250,7 +253,10 @@ function Push_Projects(p=0,ord) {
     }
 
     let atual;
-   
+    let text;
+
+    
+
 
     for(i=0;i<square.length; ++i){
        
@@ -262,6 +268,9 @@ function Push_Projects(p=0,ord) {
             if(atual != undefined){
             atual.classList.remove("full_view");
             atual.children[3].classList.remove("full_view");
+            atual.children[2].classList.remove("centralize");
+
+            text.style.display = "none";
 
             }
 
@@ -269,6 +278,14 @@ function Push_Projects(p=0,ord) {
         
         this.classList.add("full_view");
         this.children[3].classList.add("full_view");
+        this.children[2].classList.add("centralize");
+
+
+        
+     text = document.getElementById("P_"+this.children[0].innerText);
+
+     text.style.display = "block";
+
 
 
         
@@ -291,6 +308,7 @@ function Push_Projects(p=0,ord) {
 function next(){  
     if(position>=pj_list.length-1){}else{
     Push_Projects(position);
+    about.innerHTML = "";
 }
 }
 
@@ -298,7 +316,8 @@ function next(){
 
 function prev(){
     if(position<=number_containers){}else{
-    Push_Projects(position-vezes-passos)   
+    Push_Projects(position-vezes-passos);
+    about.innerHTML = ""; 
     }   
 } 
 
