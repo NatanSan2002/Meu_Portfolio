@@ -49,7 +49,8 @@ margin-left: 10%;
     background: white;
     opacity: 0.8;
     width: 26%;
-    padding: 5px 5px 0px 5px;
+    height: 10%;
+    padding: 5px 0.5% 0px 0.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +105,7 @@ background:#7393B3;
     color: white;
     width: 100%;
     border-radius: 45px;
-    padding: 4px;
+    padding: 2% 1.9%;
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
@@ -114,11 +115,23 @@ background:#7393B3;
 
 
 .projects .details img{
-    width: 29px;
+    width: 35px;
     margin: 3px 4%;
     background: white;
     border-radius: 50%;
 }
+
+.projects .full_view{
+opacity:1;
+border-radius: 8% 8% 0% 0%;
+}
+
+.projects .square .full_view{
+    max-height: none;
+    transform: translateY(98%);
+    border-radius: 0px 0px 45px 45px;
+}
+
 
 .projects >div > .linha{
     display: flex;

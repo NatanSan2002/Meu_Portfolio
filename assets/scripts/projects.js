@@ -250,22 +250,30 @@ function Push_Projects(p=0,ord) {
     }
 
     let atual;
+   
 
     for(i=0;i<square.length; ++i){
+       
         square[i].addEventListener("mouseover",function() {
+
+
 
             // Remove Atributes
             if(atual != undefined){
-            atual.style.opacity = 0.8;
+            atual.classList.remove("full_view");
+            atual.children[3].classList.remove("full_view");
+
             }
 
         // Add Atributes
-
-        this.style.opacity = 1;
+        
+        this.classList.add("full_view");
+        this.children[3].classList.add("full_view");
 
 
         
-        atual = this;  
+        atual = this; 
+        
           })
         }
 
