@@ -215,6 +215,7 @@ function Push_Projects(p=0,ord) {
     vezes = number_containers;
     }
 
+    let pj_attr =[];
     
     for(i=p,y=0;y<vezes;++i,++y){
     
@@ -228,6 +229,8 @@ function Push_Projects(p=0,ord) {
 
     let icon;
     let pj = pj_list[i];
+
+    pj_attr.push(pj);
 
     if(pj.ling == "HTML/CSS"){
     icon = "html-css-js_icon.png";
@@ -251,15 +254,14 @@ function Push_Projects(p=0,ord) {
         
     
     }
-
-    let atual;
-    let text;
-
     
+    let atual;
 
-
+   
     for(i=0;i<square.length; ++i){
-       
+
+       let ext_i = i;
+        
         square[i].addEventListener("mouseover",function() {
 
 
@@ -270,7 +272,8 @@ function Push_Projects(p=0,ord) {
             atual.children[3].classList.remove("full_view");
             atual.children[2].classList.remove("centralize");
 
-            text.style.display = "none";
+            
+       about.innerHTML = "";
 
             }
 
@@ -280,11 +283,12 @@ function Push_Projects(p=0,ord) {
         this.children[3].classList.add("full_view");
         this.children[2].classList.add("centralize");
 
-
         
-     text = document.getElementById("P_"+this.children[0].innerText);
+        
+        var attr = pj_attr[ext_i];
 
-     text.style.display = "block";
+        about.innerHTML += `<div class="text"> <h1>${attr.nome}</h1> <p> Texto 01 </p>` 
+     
 
 
 

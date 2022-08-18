@@ -152,23 +152,70 @@ transition-duration: 0.3s;
     background: var(--maincolor1);
     color: black;
     margin: 6% -5%;
-    padding: 4% 10%;
+    padding: 5% 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../imagens/projects/LF_screen.png);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .projects > div > .info_project .text{
-width: 70%;
-line-height: 1.5em;
+    width: 50%;
+    line-height: 1.5em;
+    padding: 3% 2% 1.5% 2%;
+    background: black;
+    color: white;
+    margin-left: 4%;
 }
 
 .info_project > .text h1{
-font-size: 2.0rem;
-margin-bottom: 4%;
+    font-size: 3rem;
+    margin-bottom: 8%;
+}
+
+.info_project > .links {
+width: 32%;
+display: flex;
+justify-content: center;
+}
+
+.info_project > .links > div {
+
+    display: flex;
+    width: 57%;
+    align-items: center;
+    flex-direction: column;
+  
 }
 
 
 
-.info_project .about_project{
-display:none;
+.info_project > .links > div a {
+    border-radius: 50px;
+    padding: 3% 5%;
+    width: 126px;
+    background: var(--excolor1);
+    margin-bottom: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_project > .links > div a p {
+   color: white;
+}
+
+.info_project > .links > div a > img{
+    width: 52px;
+    margin-left: 15%;
+    border-radius: 50%;
+    background: white;
 }
 
 .projects .aba {
