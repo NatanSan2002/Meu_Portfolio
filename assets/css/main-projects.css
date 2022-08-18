@@ -17,7 +17,7 @@ padding-left: 0; padding-right: 0;
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    margin: 0 -5% 4% -5%;
+    margin: 0 -5.5% 4% -5.5%;
 
 }
 
@@ -150,28 +150,24 @@ transition-duration: 0.3s;
 
 .projects > div > .info_project{
     background: var(--maincolor1);
+    min-height: 32vh;
     color: black;
-    margin: 6% -5%;
-    padding: 5% 5%;
+    margin: 6% -5.5%;
+    padding: 6% 2%;
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(../imagens/projects/LF_screen.png);
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .projects > div > .info_project .text{
-    width: 50%;
+    width: 52%;
     line-height: 1.5em;
     padding: 3% 2% 1.5% 2%;
-    background: black;
+    background: rgb(0,0,0,0.80);
     color: white;
-    margin-left: 4%;
 }
 
 .info_project > .text h1{
@@ -180,25 +176,38 @@ transition-duration: 0.3s;
 }
 
 .info_project > .links {
-width: 32%;
-display: flex;
-justify-content: center;
+    width: 40%;
+    display: flex;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: center;
 }
 
 .info_project > .links > div {
-
     display: flex;
-    width: 57%;
+    width: 100%;
     align-items: center;
     flex-direction: column;
-  
+    padding: 7% 0 1% 0;
+    backdrop-filter: blur(4px);
+    background: rgb(0,0,0,0.5);
+    justify-content: center;
+    align-content: center;
+    transition-duration: 0.2s;
 }
 
-
+.info_project > .links > div:hover{
+    backdrop-filter: blur(3px);
+    background: rgb(0,0,0,0.3);
+    transition-duration: 0.6s;
+}
 
 .info_project > .links > div a {
     border-radius: 50px;
-    padding: 3% 5%;
+    padding: 1% 3%;
     width: 126px;
     background: var(--excolor1);
     margin-bottom: 6%;

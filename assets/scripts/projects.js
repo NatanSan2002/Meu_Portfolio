@@ -287,7 +287,25 @@ function Push_Projects(p=0,ord) {
         
         var attr = pj_attr[ext_i];
 
-        about.innerHTML += `<div class="text"> <h1>${attr.nome}</h1> <p> Texto 01 </p>` 
+        about.innerHTML += `<div class="text"> <h1> ${attr.nome}</h1>
+     <p> 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, facilis officia iusto blanditiis molestiae mollitia reiciendis, iure quae maxime a laborum quam dolore quasi excepturi ea eligendi? Ut, inventore deserunt! Adipisci laborum sunt voluptatem
+     </p>
+  
+    </div> 
+    
+    <div class="links" style="background-image: url(./assets/imagens/projects/${attr.img})"> <!-- Com base no index.html-->
+
+         <div>
+      <a href="https://www.google.com/" target="_blank">
+     <p>Github</p> <img src="./assets/imagens/github_icon.png" alt="icone_github"> 
+     </a>
+     <a href="https://www.youtube.com/" target="_blank">
+     <p>Acessar</p> <img src="./assets/imagens/host_icon.png" alt="icon_host"> 
+     </a>
+     </div>
+ 
+ </div>`
      
 
 
