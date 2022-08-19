@@ -264,7 +264,15 @@ function Push_Projects(p=0,ord) {
     icon = "interrogacao_icon.png";
     }
     
-    linha.innerHTML += `<div class="square">  <h1>${pj.nome}</h1> <div class="img_container"> <img src="./assets/imagens/projects/${pj.img}" alt="foto_projeto"> </div> <div class="data"> <p> há ${pj.data} </p> <img src="./assets/imagens/skills/${icon}"> </div> <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> </div> `
+    linha.innerHTML += `<div class="square">  
+    <h1>${pj.nome}</h1> 
+    <div class="img_container"> <img src="./assets/imagens/projects/${pj.img}" alt="foto_projeto"> </div> 
+    <div class="data"> <p> há ${pj.data} </p> <img src="./assets/imagens/skills/${icon}"> </div>
+
+    <p class="text"> ${pj.text}</p>  
+
+    <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> 
+    </div> `
 
    
         position = i+1; 
@@ -287,8 +295,10 @@ function Push_Projects(p=0,ord) {
             // Remove Atributes
             if(atual != undefined){
             atual.classList.remove("full_view");
-            atual.children[3].classList.remove("full_view");
+            atual.children[4].classList.remove("full_view");
+            atual.children[3].classList.remove("open");
             atual.children[2].classList.remove("centralize");
+            atual.children[1].children[0].classList.remove("open_img");
 
             
      Clean_About();
@@ -298,8 +308,11 @@ function Push_Projects(p=0,ord) {
         // Add Atributes
         
         this.classList.add("full_view");
-        this.children[3].classList.add("full_view");
+        this.children[4].classList.add("full_view");
+        this.children[3].classList.add("open");
         this.children[2].classList.add("centralize");
+        this.children[1].children[0].classList.add("open_img");
+        
 
         
         
