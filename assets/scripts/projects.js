@@ -1,11 +1,12 @@
 class Project {
-constructor(nome,data,ling,img,github,web){
+constructor(nome,data,ling,img,github,web,text){
 this.nome = nome; 
 this.data_projeto(data);
 this.ling = ling;
 this.img = img;
 this.github = github;
 this.web = web;
+this.text = text;
 
 
 }
@@ -54,34 +55,43 @@ data_projeto (data){
 let pj_list = [
 
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste1",[2022,07,10],"PHP","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"
+),
 
 new Project ("Teste2",[2022,08,08],"JS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste3",[2022,08,07],"SQL","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste5",[2022,08,05],"dsds","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste6",[2022,08,03],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste7",[2022,08,02],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste8",[2022,08,01],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste9",[2022,07,29],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
 new Project ("Teste10",[2022,07,28],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
@@ -132,6 +142,10 @@ let abas_totais = document.getElementById("abas_totais");
 
 let about = document.querySelector(".info_project");
 
+function Clean_About(){
+ about.innerHTML = "";
+}
+
 
 
 if(Number.isInteger(pags)){
@@ -154,6 +168,7 @@ function Mais_Recentes() {
 )
 atual_pag = 0;
 ordem.innerHTML = "Mais recentes";
+Clean_About(); 
 
 }
 
@@ -168,6 +183,7 @@ function Mais_Antigos() {
 )
 atual_pag = 0;
 ordem.innerHTML = "Mais antigos";
+Clean_About(); 
 }
 
 
@@ -182,6 +198,8 @@ function Clean () {
      sqs[t].remove();
     } 
 }
+
+
 
 
 let vezes;
@@ -273,7 +291,7 @@ function Push_Projects(p=0,ord) {
             atual.children[2].classList.remove("centralize");
 
             
-       about.innerHTML = "";
+     Clean_About();
 
             }
 
@@ -289,7 +307,7 @@ function Push_Projects(p=0,ord) {
 
         about.innerHTML += `<div class="text"> <h1> ${attr.nome}</h1>
      <p> 
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, facilis officia iusto blanditiis molestiae mollitia reiciendis, iure quae maxime a laborum quam dolore quasi excepturi ea eligendi? Ut, inventore deserunt! Adipisci laborum sunt voluptatem
+         ${attr.text}
      </p>
   
     </div> 
@@ -330,7 +348,7 @@ function Push_Projects(p=0,ord) {
 function next(){  
     if(position>=pj_list.length-1){}else{
     Push_Projects(position);
-    about.innerHTML = "";
+    Clean_About(); 
 }
 }
 
@@ -339,7 +357,7 @@ function next(){
 function prev(){
     if(position<=number_containers){}else{
     Push_Projects(position-vezes-passos);
-    about.innerHTML = ""; 
+    Clean_About(); 
     }   
 } 
 

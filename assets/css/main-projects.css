@@ -68,7 +68,9 @@ to{
 }
 }
 
-
+.projects .square > h1{
+margin-bottom: 1%;
+}
 
 .projects .square > .img_container{
 background:rgba(48, 47, 47);
@@ -213,7 +215,12 @@ transition-duration: 0.3s;
     margin-bottom: 6%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.info_project > .links > div a:hover{
+    background: linear-gradient(to right, var(--excolor1) 43%, var(--excolor2));
+    transition-duration: 0.9s;
 }
 
 .info_project > .links > div a p {
@@ -222,7 +229,6 @@ transition-duration: 0.3s;
 
 .info_project > .links > div a > img{
     width: 52px;
-    margin-left: 15%;
     border-radius: 50%;
     background: white;
 }
@@ -336,7 +342,81 @@ left:4px;
 
 
 
+/* Media Widts*/
 
 
+
+@media(max-width:1400px){
+
+    .projects > div > .info_project {
+    margin: 7% -5.5%;
+    }
+
+    .info_project > .links > div a {
+        padding: 1% 1%;
+        width:121px;
+        justify-content: space-around;
+        margin-bottom: 7%;
+    }
+.info_project > .links > div a > img {
+    width: 41px;
+}
+
+
+}
+
+@media(max-width:950px){
+
+    .projects > div > .info_project {
+        display: none;
+    }
+
+    .projects >div > .linha {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .projects .square {
+    width: 90%;
+    border-radius: 15px 15px 0% 0%;
+    margin-bottom: 10%;
+    opacity: 1;
+    padding:0;
+    }
+
+    .projects .square > h1{
+        margin:2% 0;
+        }
+
+    .projects .square > .img_container {
+        overflow: hidden;
+        height: 14vw;
+    }
+    .projects .square > .img_container img {
+        width: 100%;
+        filter: blur(1px);
+    }
+
+    .projects .square .data img {
+        width: 10%;
+    }
+
+    .projects .details {
+        padding:2% 0;
+        border-radius: 28px 28px 0 0;
+        max-height: 1px;
+    }
+    .projects .aba {
+        justify-content: flex-end;
+    }
+    .projects .aba .position {
+        order: -1;
+        margin-right: -72px;
+        margin-top: 81px;
+    }
+
+    div#prev_seta{
+        margin-bottom: 92px;
+    }
+}
 
 
