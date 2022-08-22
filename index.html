@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Natan Santos</title>
-
+    <link rel="stylesheet" href="./assets/css/geral.css">
     <link rel="stylesheet" href="./assets/css/header-initial.css">
     <link rel="stylesheet" href="./assets/css/main-about.css">
     <link rel="stylesheet" href="./assets/css/main-skills.css">
@@ -31,16 +31,16 @@
     <nav>
         
    <ul>
-<li><a href="#"> Inicio</a></li>
-<li><a href="#"> Habilidades</a></li>
-<li><a href="#"> Projetos</a></li>
-<li><a href="#"> Currículo</a></li>
+<li><a href="#inicio" onclick="Act_MobMenu()"> Inicio</a></li>
+<li><a href="#section_skills" onclick="Act_MobMenu()"> Habilidades</a></li>
+<li><a href="#section_projects" onclick="Act_MobMenu()"> Projetos</a></li>
+<li><a href="./assets/documents/curriculo.html" target="_blank"> Currículo</a></li>
   </ul>
     </nav>
         </header>
 
         <main>
-     <section class="welcome">
+     <section class="welcome" id="inicio">
 
         <div class="normal_view">
    <h1>NATAN SANTOS GOMES</h1>
@@ -102,7 +102,7 @@
     </section>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="section_skills">
 
        <h1>Minhas Habilidades</h1>
 
@@ -213,7 +213,7 @@
 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="section_projects">
 
        <h1>Meus Projetos</h1>
 
@@ -321,11 +321,16 @@
         </main>
 
         <footer> 
-            <p>Developed by Natan Santos</p> 
-            <p>[email,contato]</p>
+            <div>
+            <p>natansantosgomes@gmail.com</p>
+            <p>(11) 94633-3039 </p>
+            </div>
+            <p>Developed by <strong> Natan Santos </strong> 2022  </p> 
             <nav>
-            [Linkedin,Github]
+            <img src="./assets/imagens/linkedin_icon.png" alt="linkedin_icon">
+            <img src="./assets/imagens/github_icon.png" alt="github_icon">
             </nav>
+           
         </footer>
 
 

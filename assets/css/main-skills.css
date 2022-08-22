@@ -26,15 +26,13 @@ div > .block_lings {
 }
 
 .skills > div > .info{
-    padding: 27px 2%;
-    width: 50%;
-    background: var(--maincolor1);
-    color: black;
-    margin: 0 0 2% auto;
-    border-radius: 27px;
+    color: white;
+    margin: 0 4% 2% 0px;
     font-weight: 400;
     font-size: 1.7rem;
     font-style: italic;
+    text-align: right;
+    
 }
 
 .block_lings .container{
@@ -207,10 +205,6 @@ transition-duration: 0.2s;
     .skills > div {
         width: 100%;
         padding: 10% 0%;
-    }
-
-    .skills > div > .info{
-        margin-left: 40%;
     }
 
 }

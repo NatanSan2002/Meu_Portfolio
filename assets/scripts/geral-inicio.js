@@ -29,7 +29,10 @@ let lines = mob_menu[1].children;
 
 
 
+
+
 function Act_MobMenu(){
+if(window.screen.width < 951 ){
 if(exb_menu == false){
 
 header.style.display = "flex";
@@ -47,6 +50,7 @@ exb_menu = true;
     exb_menu = false;
 }
 }
+}
 
 window.addEventListener('resize',function(){
 let largura = window.screen.width;
@@ -57,6 +61,5 @@ if(largura > 950){
         header.style.display = "none";
     }
 })
-
 
 

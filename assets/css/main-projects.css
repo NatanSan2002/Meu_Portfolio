@@ -321,6 +321,7 @@ p#abas_totais  {
 background: white;
 border-radius: 50%;
 width: 72px; height:72px;
+cursor: pointer;
 }
 
 .projects .aba > .button_aba img{
