@@ -50,7 +50,7 @@ header nav a{
     background: var(--maincolor1);
     color:var(--excolor3);
     border-radius: 20px;
-    font-size: 1.0rem;
+    font-size: 16px;
     font-weight: 500;
     margin: 0px 0.3vw;
     font-family: var(--fontSubTitle);
@@ -236,7 +236,7 @@ display:none;
          font-size: 6.0em;          
                 }                   
     header nav a{
-        font-size: 0.9em;                             
+        font-size: 13px;                             
                 }
                     }
 

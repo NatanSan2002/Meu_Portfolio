@@ -65,7 +65,7 @@ new Project ("Teste1",[2022,07,10],"PHP","LF_screen.png",
 
 new Project ("Teste2",[2022,08,08],"JS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, provident! Sint iure illum illo voluptatibus perferendis debitis accusamus distinctio recusandae officia non incidunt est accusantium, id nemo, cumque dolorum amet pariatur sequi. Architecto sapiente cupiditate neque libero doloremque non reprehenderit, culpa dolore, a, ducimus soluta nihil doloribus commodi perspiciatis itaque odit accusamus. Repellendus dolorem aliquam debitis vel non quia ipsum nostrum minima corrupti, laborum veritatis quas autem impedit consectetur. Assumenda iure fuga mollitia saepe vel. Error autem omnis accusantium modi porro quisquam id fuga minima, maxime in. Fugiat expedita iure, at esse consequatur blanditiis repellendus, obcaecati atque cupiditate maiores consequuntur!"),
 
 new Project ("Teste3",[2022,08,07],"SQL","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
