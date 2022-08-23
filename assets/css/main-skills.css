@@ -326,6 +326,12 @@ padding: 3% 0 0 0;
     }
 }
 
+@media(max-width:508px){
+    .block_lings .container .header h1 {
+        font-size: 1.7em;
+    }
+}
+
 @media(max-width:442px){
     .block_lings .container {
         width: 100%;

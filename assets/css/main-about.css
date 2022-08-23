@@ -55,7 +55,7 @@ font-size: 5rem;
     line-height: 1.7rem;
     font-family: var(--fontSerifada);
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .about .texto p{
@@ -246,6 +246,15 @@ transform: translate3d(0px,0px,0px);
     padding: 40px 2%;
     width: 96%;   
 }
+.about .info > div .detalhes .Black {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+}
+
+.about .info > div .detalhes .Black .tel {
+    font-size: 1.2rem; 
+}
+
 }
 
 @media(max-width:882px){
@@ -329,7 +338,6 @@ transform: translate3d(0px,0px,0px);
 
             .about .info > div .detalhes .Black{
                 text-align:center;
-                line-height: 1.9rem;
                 font-size: 1.5rem;
                 padding: 0;
                 }
@@ -355,4 +363,10 @@ transform: translate3d(0px,0px,0px);
             }
             }
 
-       
+@media(max-width:390px){
+    .title h1 {
+        font-size: 4.0rem;
+    }           
+}
+
+            

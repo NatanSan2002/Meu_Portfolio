@@ -24,6 +24,8 @@ padding-left: 0; padding-right: 0;
 
 .ordenacao > h2 {
 margin-left: 10%;
+font-family: var(--fontSubTitle);
+font-style: italic;
 }
 
 .ordenacao > div {
@@ -70,6 +72,7 @@ to{
 }
 
 .projects .square > h1{
+font-size: 1.6rem;
 margin-bottom: 1%;
 }
 
@@ -84,8 +87,11 @@ background:rgba(48, 47, 47);
     margin: 3% auto 1% auto;
     }
 
-.projects .square p{
+.projects .square .data p{
 margin: 2% 3% 2% 11%;
+font-family: var(--fontOtherTitles);
+font-weight: 300;
+font-style: italic;
 }
 
 .projects .square .data{
@@ -110,8 +116,10 @@ margin: 0 0 0 0;
 width: 80%;
 text-align: center;
 height: 25px;
-line-height: 1.6rem;
-font-size: 1.1em;
+line-height: 1.8rem;
+font-size: 1.2em;
+font-family: var(--fontSubTitle);
+font-weight: 300;
 overflow: hidden;
 transition-duration: 0.3s;
 }
@@ -339,12 +347,12 @@ cursor: pointer;
     position:relative;
 }
 
-.projects .aba > .button_aba img:hover{
+.projects .aba > .button_aba:hover img{
 animation: aumentar 0.7s alternate infinite,
 mexer_left 0.7s alternate infinite;
 }
 
-img#button_Prev:hover{
+.projects .aba > div#button_Prev:hover img{
 animation: mexer_right 0.8s alternate infinite,
 aumentar 0.8s alternate infinite;
 }
@@ -406,6 +414,12 @@ left:4px;
 
 }
 
+@media(max-width:1097px){
+    .ordenacao > h2 {
+        font-size: 1.8rem;
+    }
+}
+
 @media(max-width:950px){
 
     .projects .square .text {
@@ -460,6 +474,11 @@ left:4px;
         margin: 2% 0 ;
     }
 
+    .projects .square .data p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
     .projects .square .data img {
         width: 62px;
     }
@@ -496,7 +515,7 @@ left:4px;
         margin-top: 81px;
     }
 
-    div#prev_seta{
+    .projects .aba .prev_seta{
         margin-bottom: 92px;
     }
 }
@@ -509,14 +528,24 @@ left:4px;
     }
 
     .ordenacao > div {
+        padding: 4px 8px;
+        width: 106px;
         margin-right: 0%;
     }
         
-    
+    .projects .square .data {
+        margin: 3px 0;
+    }
+
+    .projects .square .data img {
+        width: 35px;
+    }
 
     .projects .square .text {
         width: 90%;
     }
+
+
     .projects > div {
 
         width: 100%;
@@ -539,4 +568,38 @@ left:4px;
     .projects .square > .img_container {
         height: 15vw;
     }
+
+    .projects .aba > .button_aba {
+        width: 40px;
+        height: 40px; 
+    }
+
+    .projects .aba > .button_aba img {
+        width: 40px;
+    }
+
+    .projects .aba .position {
+        margin-right: -24px;
+        margin-top: 29px;
+    }
+     
+    .projects .aba > .button_aba:hover img{
+    animation:none;
+    }
+     
+
+    .projects .aba > div#button_Prev:hover img {
+    animation: none;
+    }
+    
+    
+
 }
+
+
+
+@media(max-width:390px){
+    .projects .square p {
+        font-size: 12px;
+    }
+    }
