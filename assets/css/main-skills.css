@@ -2,12 +2,19 @@
     padding: 0px;
 }
 
+.skills > h1 {
+    background: var(--maincolor1);
+    color: black;
+    font-weight: 300;
+    padding: 1% 6%;
+}
+
 .skills > div {
     background: var(--maincolor2);
     color: white;
-    margin: 8% auto;
+    margin: 0 auto;
     width: 85%;
-    padding: 6% 5%;
+    padding: 5% 5% 0 5%;
     font-family: var(--fontSubTitle);
 }
 
@@ -204,7 +211,7 @@ transition-duration: 0.2s;
 @media(max-width:1538px){
     .skills > div {
         width: 100%;
-        padding: 10% 0%;
+        padding: 5% 0 0 0;
     }
 
 }
@@ -309,7 +316,7 @@ padding: 3% 0 0 0;
 @media(max-width:770px){
     .skills > div > .info {
     width: 95%;
-    margin: 0 auto 1% auto;
+    margin: 7% auto 4% auto;
     border-radius: 0px;
     }
 }
@@ -329,6 +336,11 @@ padding: 3% 0 0 0;
 @media(max-width:508px){
     .block_lings .container .header h1 {
         font-size: 1.7em;
+    }
+    .skills > div > .info {
+        width: 95%;
+        text-align: left;
+        padding: 0 1% 0 3%;
     }
 }
 

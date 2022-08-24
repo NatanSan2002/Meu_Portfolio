@@ -1,5 +1,6 @@
 .projects{
-padding-left: 0; padding-right: 0;
+    padding: 5% 0;
+    background: var(--maincolor2);
 }
 
 
@@ -315,15 +316,19 @@ p#aba_atual  {
     background: rgba(48, 47, 47);
     color: white;
     font-size: 21px;
+    font-family: var(--fontNumbers);
+    font-weight: 300;
+    font-style: italic;
     border-radius: 50%;
-    padding: 0px 6px;
+    padding: 0px 8px;
     position: relative;
     bottom: 16px;
     left: 8px;
 }
 
 p#abas_totais  {
-    font-size: 37px;
+    font-size: 36px;
+    font-style: italic;
     background: #818589;
     color: #F06543;
     border-radius: 50%;
@@ -414,6 +419,12 @@ left:4px;
 
 }
 
+@media(max-width:1150px){
+    .projects {
+        padding: 10% 0 1% 0;
+    }
+}
+
 @media(max-width:1097px){
     .ordenacao > h2 {
         font-size: 1.8rem;
@@ -421,6 +432,10 @@ left:4px;
 }
 
 @media(max-width:950px){
+
+    .projects .ordenacao {
+        margin: 0 -5.5% 11% -5.5%;
+    }
 
     .projects .square .text {
         display: block;
@@ -508,6 +523,7 @@ left:4px;
     }
     .projects .aba {
         justify-content: flex-end;
+        margin-top: 0;
     }
     .projects .aba .position {
         order: -1;
@@ -518,9 +534,23 @@ left:4px;
     .projects .aba .prev_seta{
         margin-bottom: 92px;
     }
+
+    .projects .aba > .button_aba:hover img{
+        animation:none;
+        }
+         
+    
+        .projects .aba > div#button_Prev:hover img {
+        animation: none;
+        }
+        
 }
 
-
+@media(max-width:810px){
+    .projects {
+        padding: 20% 0 1% 0;
+    }
+}
 @media(max-width:604px){
 
     .projects .ordenacao {
@@ -552,11 +582,11 @@ left:4px;
         padding: 2% 0%;
     }
     .projects .ordenacao {
-        margin: 0 0 4% 0;
+        margin: 0 0 11% 0;
     }
 
     .projects .aba {
-        margin: 8% 0% 0 0%;
+        margin: 0 0 0 0;
     }
 }
 
@@ -583,15 +613,6 @@ left:4px;
         margin-top: 29px;
     }
      
-    .projects .aba > .button_aba:hover img{
-    animation:none;
-    }
-     
-
-    .projects .aba > div#button_Prev:hover img {
-    animation: none;
-    }
-    
     
 
 }

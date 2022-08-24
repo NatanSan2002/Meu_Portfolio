@@ -32,7 +32,7 @@ let lines = mob_menu[1].children;
 
 
 function Act_MobMenu(){
-if(window.screen.width < 951 ){
+
 if(exb_menu == false){
 
 header.style.display = "flex";
@@ -49,6 +49,13 @@ exb_menu = true;
     header.style.display = "none";
     exb_menu = false;
 }
+
+}
+
+function Close() {
+if(window.screen.width < 951){
+    header.style.display = "none";
+    exb_menu = false;
 }
 }
 

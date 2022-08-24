@@ -1,6 +1,6 @@
 .title {
     background: var(--maincolor2);
-    padding: 5% 10% 5% 10%;
+    padding: 3% 10% 3% 10%;
 }
 
 
@@ -259,7 +259,7 @@ transform: translate3d(0px,0px,0px);
 
 @media(max-width:882px){
     .about {
-    padding-bottom: 150px;
+        padding-bottom: 20%;
     }
 
     .about h1{
@@ -349,17 +349,20 @@ transform: translate3d(0px,0px,0px);
             
         }
 
-@media(max-width:634px){
-    .title h1{
-        margin: 10% 0;
-    }
- 
-}
+
 
 @media(max-width:474px){
         .about {
            padding-left: 0%;
            padding-right: 0%;
+            }
+            .about section {
+                padding: 2% 0;
+            }
+
+            .about .texto {
+            width: 92%;
+            padding: 3% 4%;
             }
             }
 
