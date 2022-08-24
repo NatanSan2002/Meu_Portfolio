@@ -242,6 +242,11 @@ transform: translate3d(0px,0px,0px);
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    .about .texto {
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
     .about .info{
     padding: 40px 2%;
     width: 96%;   
@@ -364,12 +369,17 @@ transform: translate3d(0px,0px,0px);
             width: 92%;
             padding: 3% 4%;
             }
+
+            .about h1{
+            font-size: 4.4rem;
+            }
             }
 
 @media(max-width:390px){
     .title h1 {
         font-size: 4.0rem;
-    }           
+    }    
+    
 }
 
             

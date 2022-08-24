@@ -55,16 +55,16 @@ data_projeto (data){
 let pj_list = [
 
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://natansan2002.github.io/Projeto_L_Filosofias/",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste1",[2022,07,10],"PHP","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+new Project ("Poesias de Lorem",[2022,4,10],"HTML/CSS","cordel_screen.png",
+"https://github.com/NatanSan2002/Projeto_Cordel","https://natansan2002.github.io/Projeto_Cordel/",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"
 ),
 
-new Project ("Teste2",[2022,08,08],"JS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+new Project ("Slides de Paisagens",[2022,07,08],"HTML/CSS","slide_screen.png",
+"https://github.com/NatanSan2002/Slide","https://natansan2002.github.io/Slide/",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, provident! Sint iure illum illo voluptatibus perferendis debitis accusamus distinctio recusandae officia non incidunt est accusantium, id nemo, cumque dolorum amet pariatur sequi. Architecto sapiente cupiditate neque libero doloremque non reprehenderit, culpa dolore, a, ducimus soluta nihil doloribus commodi perspiciatis itaque odit accusamus. Repellendus dolorem aliquam debitis vel non quia ipsum nostrum minima corrupti, laborum veritatis quas autem impedit consectetur. Assumenda iure fuga mollitia saepe vel. Error autem omnis accusantium modi porro quisquam id fuga minima, maxime in. Fugiat expedita iure, at esse consequatur blanditiis repellendus, obcaecati atque cupiditate maiores consequuntur!"),
 
 new Project ("Teste3",[2022,08,07],"SQL","LF_screen.png",
@@ -75,53 +75,17 @@ new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste5",[2022,08,05],"dsds","LF_screen.png",
+new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste6",[2022,08,03],"HTML/CSS","LF_screen.png",
+new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste7",[2022,08,02],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste8",[2022,08,01],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste9",[2022,07,29],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste10",[2022,07,28],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste11",[2022,07,27],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste12",[2022,07,26],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste13",[2022,07,25],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste14",[2022,07,24],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste15",[2022,07,23],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste16",[2022,07,22],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste17",[2022,07,21],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste18",[2022,07,20],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com"),
-
-new Project ("Teste19",[2022,07,19],"HTML/CSS","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com")
 
 
 
@@ -146,13 +110,7 @@ function Clean_About(){
  about.innerHTML = "";
 }
 
-
-
-if(Number.isInteger(pags)){
-abas_totais.innerHTML = pags;
-}else{
-abas_totais.innerHTML = parseFloat(pags+1).toFixed(0);
-} 
+abas_totais.innerHTML = Math.ceil(pags).toFixed(0);
 
 let atual_pag = 0;
 
@@ -328,10 +286,10 @@ function Push_Projects(p=0,ord) {
     <div class="links" style="background-image: url(./assets/imagens/projects/${attr.img})"> <!-- Com base no index.html-->
 
          <div>
-      <a href="https://www.google.com/" target="_blank">
+      <a href="${attr.github}" target="_blank">
      <p>Github</p> <img src="./assets/imagens/github_icon.png" alt="icone_github"> 
      </a>
-     <a href="https://www.youtube.com/" target="_blank">
+     <a href="${attr.web}" target="_blank">
      <p>Acessar</p> <img src="./assets/imagens/host_icon.png" alt="icon_host"> 
      </a>
      </div>
@@ -359,7 +317,7 @@ function Push_Projects(p=0,ord) {
     
 
 function next(){  
-    if(position>=pj_list.length-1){}else{
+    if(position>pj_list.length-1){}else{
     Push_Projects(position);
     Clean_About(); 
 }
