@@ -34,15 +34,37 @@ data_projeto (data){
     
 
     
-    if(tempo / anos >= 1){
-    this.data = Math.floor(tempo / anos)+ " anos";
-    }else if (tempo / meses >= 1){
-    this.data = Math.floor(tempo / meses)+ " meses";
-    }else if(tempo / semanas >= 1){
-    this.data = Math.floor(tempo / semanas)+ " semanas";
-    }else if(tempo / dias >= 1){
-    this.data = Math.floor(tempo / dias)+ " dias";
-}else{this.data = Math.floor(tempo / horas)+ " horas"}
+    if(tempo / anos >= 100){
+    this.data = "(em breve)";
+    } else if(Math.floor(tempo / anos) == 1){
+    this.data = Math.floor(tempo / anos)+ " ano";
+    }else if(Math.floor(tempo / anos) > 1){
+        this.data = Math.floor(tempo / anos)+ " anos";
+        } 
+
+    else if (Math.floor(tempo / meses) == 1){
+    this.data = Math.floor(tempo / meses)+ " mês";
+    }else if (Math.floor(tempo / meses) > 1){
+        this.data = Math.floor(tempo / meses)+ " meses";
+        }
+
+    else if(Math.floor(tempo / semanas) == 1){
+    this.data = Math.floor(tempo / semanas)+ " semana";
+    }else if(Math.floor(tempo / semanas) > 1){
+        this.data = Math.floor(tempo / semanas)+ " semanas";
+        }
+
+    else if(Math.floor(tempo / dias) == 1){
+    this.data = Math.floor(tempo / dias)+ " dia";
+    }else if(Math.floor(tempo / dias) > 1){
+        this.data = Math.floor(tempo / dias)+ " dias";
+        }
+
+        else if(Math.floor(tempo / horas) == 1){
+          this.data = Math.floor(tempo / horas)+ " hora"
+        }else {
+            this.data = Math.floor(tempo / horas)+ " horas"
+        }
 
 
 }
@@ -50,13 +72,14 @@ data_projeto (data){
 }
 
                                  // ANO / Mes / Dia
+    // Linguagens: HTML/CSS, PHP, JS, React, SQL 
 
 
 let pj_list = [
 
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://natansan2002.github.io/Projeto_L_Filosofias/",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+""),
 
 new Project ("Poesias de Lorem",[2022,4,10],"HTML/CSS","cordel_screen.png",
 "https://github.com/NatanSan2002/Projeto_Cordel","https://natansan2002.github.io/Projeto_Cordel/",
@@ -67,29 +90,22 @@ new Project ("Slides de Paisagens",[2022,07,08],"HTML/CSS","slide_screen.png",
 "https://github.com/NatanSan2002/Slide","https://natansan2002.github.io/Slide/",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, provident! Sint iure illum illo voluptatibus perferendis debitis accusamus distinctio recusandae officia non incidunt est accusantium, id nemo, cumque dolorum amet pariatur sequi. Architecto sapiente cupiditate neque libero doloremque non reprehenderit, culpa dolore, a, ducimus soluta nihil doloribus commodi perspiciatis itaque odit accusamus. Repellendus dolorem aliquam debitis vel non quia ipsum nostrum minima corrupti, laborum veritatis quas autem impedit consectetur. Assumenda iure fuga mollitia saepe vel. Error autem omnis accusantium modi porro quisquam id fuga minima, maxime in. Fugiat expedita iure, at esse consequatur blanditiis repellendus, obcaecati atque cupiditate maiores consequuntur!"),
 
-new Project ("Teste3",[2022,08,07],"SQL","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+new Project ("Loja True Gaming",[2021,11,06],"PHP","lojaTG_screen.png",
+"https://github.com/NatanSan2002/Projeto_PHP","#",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
+new Project ("Custos de Trabalhos",[2022,05,06],"React","Costs_screen.png",
+"https://github.com/NatanSan2002/React-JS/tree/main/React/Hora_de_Codar_Projeto/projeto_hc","#",
 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
 
-new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg", 
+"#","#", "Projeto Futuro"),
 
-new Project ("Teste4",[2022,08,06],"React","LF_screen.png",
-"https://github.com/NatanSan2002/Projeto_L_Filosofias","https://www.youtube.com",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg",
+"#","#", "Projeto Futuro"),
 
 
-
-
-
-
-
-
+//Sim, o unico motivo de ter esses "Em Breve" é que queria mostrar que o scroll de paginas funciona.
 
 ] 
 
@@ -229,7 +245,10 @@ function Push_Projects(p=0,ord) {
 
     <p class="text"> ${pj.text}</p>  
 
-    <div class="details"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </div> 
+    <div class="details"> 
+    <a href="${pj.web}" target="_blank"> <img src="./assets/imagens/host_icon.png" alt="icon_host"> </a>
+    <a href="${pj.github}" target="_blank"> <img src="./assets/imagens/github_icon.png" alt="icon_github"> </a>
+    </div> 
     </div> `
 
    
