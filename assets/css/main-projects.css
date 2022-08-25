@@ -214,8 +214,10 @@ transition-duration: 0.3s;
     padding: 3% 2% 1.5% 2%;
     background: rgb(0,0,0,0.80);
     color: white;
+    font-size: 1.1rem;
     font-family: var(--fontSubTitle);
     font-weight: 300;
+    text-indent: 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -225,6 +227,7 @@ transition-duration: 0.3s;
     font-size: 3rem;
     font-family: var(--fontSubTitle);
     font-weight: 400;
+    text-indent: 0;
     margin: 0px 0 4% 3%;
 }
 
@@ -400,7 +403,11 @@ left:4px;
 
 /* Media Widts*/
 
-
+@media(max-width:1502px){
+    .projects > div > .info_project .text {
+    font-size: 1.0rem;
+    }
+}
 
 @media(max-width:1400px){
 

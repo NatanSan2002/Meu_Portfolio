@@ -234,7 +234,12 @@ display:none;
 @media(max-width:1252px){
          .welcome h1 {
          font-size: 6.0em;          
-                }                   
+                }
+        
+        .header_icon_small {
+            width: 50px;
+                }
+                
     header nav a{
         font-size: 13px;                             
                 }
@@ -309,6 +314,10 @@ transition-duration:0s;
 
     header .icon{
     width:70px;
+    }
+
+    .header_icon_small {
+        width: 70px;
     }
 
     header ul {

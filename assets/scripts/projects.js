@@ -79,24 +79,24 @@ let pj_list = [
 
 new Project ("Loucuras Da Filosofia",[2022,4,5],"HTML/CSS","LF_screen.png",
 "https://github.com/NatanSan2002/Projeto_L_Filosofias","https://natansan2002.github.io/Projeto_L_Filosofias/",
-""),
+"Um dos primeiros sites que fiz já com um bom conhecimento de HTML/CSS e psicologia das cores. O tema do site é completamente Ilustrativo, foi a primeira coisa que achei interessante na hora para ser a base mas não me preocupei em colocar conteúdo bibliográfico de fato, pois foquei inteiramente na estilização."),
 
 new Project ("Poesias de Lorem",[2022,4,10],"HTML/CSS","cordel_screen.png",
 "https://github.com/NatanSan2002/Projeto_Cordel","https://natansan2002.github.io/Projeto_Cordel/",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"
+'Mini site para aplicar meus conhecimentos de HTML e CSS, principalmente sobre efeitos como o "Parallax" com a propriedade: background-attachment do CSS, e Tamanho das letras flexiveis com %. Me concentrei inteiramente na estilização e aplicação do efeito, por isso até o nome-ei como "Poesias de Lorems".'
 ),
 
 new Project ("Slides de Paisagens",[2022,07,08],"HTML/CSS","slide_screen.png",
 "https://github.com/NatanSan2002/Slide","https://natansan2002.github.io/Slide/",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, provident! Sint iure illum illo voluptatibus perferendis debitis accusamus distinctio recusandae officia non incidunt est accusantium, id nemo, cumque dolorum amet pariatur sequi. Architecto sapiente cupiditate neque libero doloremque non reprehenderit, culpa dolore, a, ducimus soluta nihil doloribus commodi perspiciatis itaque odit accusamus. Repellendus dolorem aliquam debitis vel non quia ipsum nostrum minima corrupti, laborum veritatis quas autem impedit consectetur. Assumenda iure fuga mollitia saepe vel. Error autem omnis accusantium modi porro quisquam id fuga minima, maxime in. Fugiat expedita iure, at esse consequatur blanditiis repellendus, obcaecati atque cupiditate maiores consequuntur!"),
+'Um simples site com apenas um slide, cujo é deslizado caso um dos botões seja clicado ou automaticamente a cada 7 segundos. O principal intuito que eu o fiz foi para praticar melhor as animações de CSS: transform, translate, etc... Também requiriu bastante concepção de tamanho total da tela com as propriedades: vw, vh, que optei bastante nesse projeto para melhor adaptação em variáveis displays.'),
 
 new Project ("Loja True Gaming",[2021,11,06],"PHP","lojaTG_screen.png",
 "https://github.com/NatanSan2002/Projeto_PHP","#",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+'O primeiro grande site que fiz, por fins acadêmicos (onde minha autoria é de cerca de 80%), com o tema de: "loja de jogos" que usa SQL na parte da listagem dos jogos do catálogo, bem como suas informações próprias (nome, ano, plataforma). É um site que me orgulhei bastante na época, principalmente pelo o banco de dados,  mas que hoje com muito mais conhecimento eu o criaria bem diferente, respeitando as recomendações de HTML/CSS, além das próprias escolhas de design que fiz por ser ainda bem iniciante.'),
 
 new Project ("Custos de Trabalhos",[2022,05,06],"React","Costs_screen.png",
 "https://github.com/NatanSan2002/React-JS/tree/main/React/Hora_de_Codar_Projeto/projeto_hc","#",
-"Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, temporibus? Praesentium distinctio dolore aliquid inventore unde cum possimus commodi eveniet. Voluptatum eligendi soluta quod nostrum doloribus sit eaque dolor alias! Iusto voluptatem impedit aliquam, commodi libero quisquam reiciendis maxime assumenda iure. Dolores obcaecati, sint culpa accusamus doloremque"),
+'Projeto de: "contagem de gastos" do curso de React que fiz,  onde o usuário pode criar um projeto com um orçamento e se o mesmo tiver dinheiro o suficiente pode melhorá-lo, etc, algo até que simples mas que usa os principais recursos de um site React. Pode parecer impróprio usar-se um site de curso, porem foi algo que exigiu bastante da minha parte, não só por eu não copiar e colar o código e sim prestar atenção nos detalhes, mas também por em muitos momentos que eu tive que "me virar" pois o curso quando fiz já estava relativamente desatualizado.'),
 
 new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg", 
 "#","#", "Projeto Futuro"),
