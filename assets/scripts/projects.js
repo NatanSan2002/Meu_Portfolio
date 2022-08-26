@@ -90,7 +90,7 @@ new Project ("Slides de Paisagens",[2022,07,08],"HTML/CSS","slide_screen.png",
 "https://github.com/NatanSan2002/Slide","https://natansan2002.github.io/Slide/",
 'Um simples site com apenas um slide, cujo é deslizado caso um dos botões seja clicado ou automaticamente a cada 7 segundos. O principal intuito que eu o fiz foi para praticar melhor as animações de CSS: transform, translate, etc... Também requiriu bastante concepção de tamanho total da tela com as propriedades: vw, vh, que optei bastante nesse projeto para melhor adaptação em variáveis displays.'),
 
-new Project ("Loja True Gaming",[2021,11,06],"PHP","lojaTG_screen.png",
+new Project ("Loja True Gaming",[2021,11,06],"PHP","lojatg_screen.png",
 "https://github.com/NatanSan2002/Projeto_PHP","#",
 'O primeiro grande site que fiz, por fins acadêmicos (onde minha autoria é de cerca de 80%), com o tema de: "loja de jogos" que usa SQL na parte da listagem dos jogos do catálogo, bem como suas informações próprias (nome, ano, plataforma). É um site que me orgulhei bastante na época, principalmente pelo o banco de dados,  mas que hoje com muito mais conhecimento eu o criaria bem diferente, respeitando as recomendações de HTML/CSS, além das próprias escolhas de design que fiz por ser ainda bem iniciante.'),
 
