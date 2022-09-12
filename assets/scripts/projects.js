@@ -98,8 +98,8 @@ new Project ("Custos de Trabalhos",[2022,05,06],"React","Costs_screen.png",
 "https://github.com/NatanSan2002/React-JS/tree/main/React/Hora_de_Codar_Projeto/projeto_hc","https://costs-three.vercel.app/",
 'Projeto de: "contagem de gastos" do curso de React que fiz,  onde o usuário pode criar um projeto com um orçamento e se o mesmo tiver dinheiro o suficiente pode melhorá-lo, etc, algo até que simples mas que usa os principais recursos de um site React. Pode parecer impróprio usar-se um site de curso, porem foi algo que exigiu bastante da minha parte, não só por eu não copiar e colar o código e sim prestar atenção nos detalhes, mas também por em muitos momentos que eu tive que "me virar" pois o curso quando fiz já estava relativamente desatualizado. OBS: Peço perdão, pois ainda não consegui adaptar o servidor para rodar em hospedagens externas além do localhost, assim esse endereço de host estará com o conteúdo pela metade praticamente.'),
 
-new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg", 
-"#","#", "Projeto Futuro"),
+new Project ("GH Cosméticos",[2022,09,02],"React","GH_Perfumes_screen.png", 
+"https://github.com/NatanSan2002/gh-perfumes","https://gh-perfumes.vercel.app/", 'Projeto avaliativo de processo seletivo (que não passei). Propuseram-me uma série de condições para serem realizadas em 5 dias, entre elas: a reprodução idêntica do layout do site (cores, fontes, tamanhos) mas só considerando o desktop, ou seja: a partir dos 900px de largura o display começa a quebrar. No fim, honestamente creio que consegui reproduzir fielmente a maioria do que me foi requisitado, mas reconheço que houve partes que podiam sim ter melhor refinamento, já que fazia um tempo que não produzia nada em React. Obs: Como já dito o display foi feito apenas para desktop, tamanhos menores iram quebrar!'),
 
 new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg",
 "#","#", "Projeto Futuro"),
