@@ -101,11 +101,11 @@ new Project ("Custos de Trabalhos",[2022,05,06],"React","Costs_screen.png",
 new Project ("GH Cosméticos",[2022,09,02],"React","GH_Perfumes_screen.png", 
 "https://github.com/NatanSan2002/gh-perfumes","https://gh-perfumes.vercel.app/", 'Projeto avaliativo de processo seletivo (que não passei). Propuseram-me uma série de condições para serem realizadas em 5 dias, entre elas: a reprodução idêntica do layout do site (cores, fontes, tamanhos) mas só considerando o desktop, ou seja: a partir dos 900px de largura o display começa a quebrar. No fim, honestamente creio que consegui reproduzir fielmente a maioria do que me foi requisitado, mas reconheço que houve partes que podiam sim ter melhor refinamento, já que fazia um tempo que não produzia nada em React. Obs: Como já dito o display foi feito apenas para desktop, tamanhos menores iram quebrar!'),
 
-new Project ("Em Breve",[1000,01,01],"","em_breve_screen.jpg",
-"#","#", "Projeto Futuro"),
+new Project ("Info Filmes",[2022,09,28],"React","infomovies_screen.png",
+"https://github.com/NatanSan2002/Info_Filmes","https://info-moviesapst.vercel.app/", 'Projeto feito com base no do: Hora de Codar. O principal intuito do projeto foi para treinar o uso de APIs, no caso, pegar os dados dos filmes e manipulá-los na página em questão. Também tomei muita liberdade na programação e estilização, tendo o projeto base mais como um "norte" mas não deixando-me "preso" a ele.'),
 
 
-//Sim, o unico motivo de ter esses "Em Breve" é que queria mostrar que o scroll de paginas funciona.
+
 
 ] 
 
