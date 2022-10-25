@@ -15,14 +15,23 @@ data_projeto (data){
     let atual = new Date();
 
     let projeto = data[0] + "-";
+
     for(i=1;i<data.length;++i){
+    if(data.length - i <= 1){
+    projeto += String(data[i]);
+    }else{
     projeto += String(data[i]) + "-";
+    }
     ;
     }
+    
+    
     
     projeto = new Date(projeto);
 
     const tempo = Math.abs(atual - projeto);
+
+    
 
     this.data_pura = tempo;
 //            1000ms * 60seg
@@ -64,6 +73,7 @@ data_projeto (data){
           this.data = Math.floor(tempo / horas)+ " hora"
         }else {
             this.data = Math.floor(tempo / horas)+ " horas"
+            
         }
 
 
@@ -103,6 +113,9 @@ new Project ("GH Cosméticos",[2022,09,02],"React","GH_Perfumes_screen.png",
 
 new Project ("Info Filmes",[2022,09,28],"React","infomovies_screen.png",
 "https://github.com/NatanSan2002/Info_Filmes","https://info-moviesapst.vercel.app/", 'Projeto feito com base no do: Hora de Codar. O principal intuito do projeto foi para treinar o uso de APIs, no caso, pegar os dados dos filmes e manipulá-los na página em questão. Também tomei muita liberdade na programação e estilização, tendo o projeto base mais como um "norte" mas não deixando-me "preso" a ele.'),
+
+new Project ("Index Odontologia",[2022,10,24],"React","index_screen.png",
+"https://github.com/NatanSan2002/index_test","https://index-test-two.vercel.app/", 'Projeto feito com base em layout predefinido via Figma, que usei para treinar sites feitos com "pixel perfect" em layouts. O desafio se limitava apenas ao desktop ou seja: Tamanhos mobiles teram quebras consideraveis.'),
 
 
 
