@@ -111,11 +111,23 @@ new Project ("Custos de Trabalhos",[2022,05,06],"React","Costs_screen.png",
 new Project ("GH Cosméticos",[2022,09,02],"React","GH_Perfumes_screen.png", 
 "https://github.com/NatanSan2002/gh-perfumes","https://gh-perfumes.vercel.app/", 'Projeto avaliativo de processo seletivo (que não passei). Propuseram-me uma série de condições para serem realizadas em 5 dias, entre elas: a reprodução idêntica do layout do site (cores, fontes, tamanhos) mas só considerando o desktop, ou seja: a partir dos 900px de largura o display começa a quebrar. No fim, honestamente creio que consegui reproduzir fielmente a maioria do que me foi requisitado, mas reconheço que houve partes que podiam sim ter melhor refinamento, já que fazia um tempo que não produzia nada em React. Obs: Como já dito o display foi feito apenas para desktop, tamanhos menores iram quebrar!'),
 
-new Project ("Info Filmes",[2022,09,28],"React","infomovies_screen.png",
+new Project ("Info Filmes",[2022,09,11],"React","infomovies_screen.png",
 "https://github.com/NatanSan2002/Info_Filmes","https://info-moviesapst.vercel.app/", 'Projeto feito com base no do: Hora de Codar. O principal intuito do projeto foi para treinar o uso de APIs, no caso, pegar os dados dos filmes e manipulá-los na página em questão. Também tomei muita liberdade na programação e estilização, tendo o projeto base mais como um "norte" mas não deixando-me "preso" a ele.'),
 
-new Project ("Index Odontologia",[2022,10,24],"React","index_screen.png",
-"https://github.com/NatanSan2002/index_test","https://index-test-two.vercel.app/", 'Projeto feito com base em layout predefinido via Figma, que usei para treinar sites feitos com "pixel perfect" em layouts. O desafio se limitava apenas ao desktop ou seja: Tamanhos mobiles teram quebras consideraveis.'),
+new Project ("Index Odontologia",[2022,09,18],"React","index_screen.png",
+"https://github.com/NatanSan2002/index_test","https://index-test-two.vercel.app/", 'Projeto feito com base em layout predefinido via Figma, o objetivo era a técnica "pixel perfect", que consiste em qual igual é o site final para o do layout. O desafio se limitava apenas ao desktop ou seja: Tamanhos mobiles teram quebras consideraveis.'),
+
+new Project ("Sunnyside",[2022,10,16],"React","sunnyside_screen.png",
+"https://github.com/NatanSan2002/sunnyside","https://sunnyside-pied.vercel.app/", 'Home page feita em uma empresa privada na qual fiz parte como Front-end. Foi a primeira tarefa de 100% de autoria minha até então, já que antes nessa corporação só me davam pequenas participações em projetos anteriores já finalizados, aqui então foi um marco, onde pela primeira vez estava produzindo algo comercial do "zero". Falando tecnicamente sobre a página, ela é bem simples aliais, talvez por justamente ser o primeiro trabalho "grande" que me passaram. '),
+
+new Project ("Top Games",[2022,11,08],"React","topgames_screen.png",
+"https://github.com/NatanSan2002/top-games","https://top-games-details.vercel.app/", 'Página de Detalhes feita em uma empresa privada na qual fiz parte como Front-end. É a página de detalhes de um produto quando é clicado, anteriormente só em sua miniatura por exemplo. A página é de cause total autoria minha  com exceção dos componentes: Navbar e Footer, estes foram feitos por terceiros e só os inclui para essa demonstração não ficar "estranha", além da estilização de alguns componentes menores, como os "Botões vermelhos", e o "Balão de pop-up" que estão espalhados pela página, os utilizei por conta do desing do site como um todo usa-los.'),
+
+new Project ("ShapeD",[2022,12,17],"React","shaped_screen.png",
+"https://github.com/NatanSan2002/ShapeD","https://shape-d.vercel.app/", 'Home page feita em uma empresa privada na qual fiz parte como Front-end. Acho que foi o projeto onde mais tive que usar "lógica de programação" dentro dessa empresa, pois a maior parte do site é composta de carrosséis que possuem múltiplas sessões de diferentes itens, aí tive que pensar no melhor jeito de organizá-los e distribuí-los dentro do container  de acordo com seu tipo, preço, etc.'),
+
+new Project ("Freestyle",[2022,11,26],"React","freestyle_screen.png",
+"https://github.com/NatanSan2002/Freestyle-Home-page","https://freestyle-hp.vercel.app/", 'Home page feita em uma empresa privada na qual fiz parte como Front-end. Página que contem muitos carrosséis de diferentes tipos, um como slide de grandes imagens, e outros para itens menores. Fora eles, contem também sessões muito diversas umas das outras, assim quando o fiz, não pude reaproveitar tanto componentes para um uso mais geral.'),
 
 
 
