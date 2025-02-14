@@ -129,6 +129,10 @@ new Project ("ShapeD",[2022,12,17],"React","shaped_screen.png",
 new Project ("Freestyle",[2022,11,26],"React","freestyle_screen.png",
 "https://github.com/NatanSan2002/Freestyle-Home-page","https://freestyle-hp.vercel.app/", 'Home page feita em uma empresa privada na qual fiz parte como Front-end. Página que contem muitos carrosséis de diferentes tipos, um como slide de grandes imagens, e outros para itens menores. Fora eles, contem também sessões muito diversas umas das outras, assim quando o fiz, não pude reaproveitar tanto componentes para um uso mais geral.'),
 
+new Project ("Pet Store",[2023,01,22],"HTML/CSS","petST.png",
+    "https://github.com/NatanSan2002/petstore","https://natansan2002.github.io/petstore/", 'Um Site feito apenas com HTML/CSS (e Javascript) de um processo seletivo que participei, o site em minha humilde opinião é bastante competente em todos os sentidos, organização, estilização etc, a unica coisa que não levo crédido é sobre o desing, mas a aplicação é de minha completa autoria. Até as exibições dos produtos são feitas de forma dinâmica, com o Javascript simulando um banco de dados para organização dos itens.'),
+    
+
 
 
 
